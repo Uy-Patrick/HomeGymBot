@@ -1,0 +1,284 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>HomeGymBot</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div id="home-gym-bot">HomeGymBot</div>
+    <div class="hidden" id="workout-info">
+      <button id="close-button" onclick="closeWorkoutInfo()">&times;</button>
+      <img
+        id="workout-info-pic"
+        src="https://i0.wp.com/post.healthline.com/wp-content/uploads/2021/04/400x400_12-Pushup_Alternatives_to_Build_Size_and_Strength_Incline_Pushup.gif?h=840"
+        alt="incline push ups"
+      />
+      <p class="workout-info-text" id="intensity-level-info">
+        <strong>Intensity Level: </strong>
+      </p>
+      <p class="workout-info-text" id="workout-name-info">
+        <strong>Workout Name: </strong>
+      </p>
+      <p class="workout-info-text" id="targeted-muscles-info">
+        <strong>Targeted Muscles: </strong>
+      </p>
+      <p class="workout-info-text" id="workout-link-info">
+        <strong>Workout Link: </strong>
+      </p>
+    </div>
+    <div class="hidden" id="fade-background" onclick="closeWorkoutInfo()"></div>
+    <img
+      id="background-image"
+      src="https://png.pngitem.com/pimgs/s/179-1796315_bodybuilder-clip-art-transparent-cartoon-muscle-man-hd.png"
+      alt="a muscular cartoon man as the background image"
+    />
+    <div id="body-container">
+      <div id="left">
+        <div id="intensity-level-container">
+          <h2 id="intensity-level">Intensity Level</h2>
+          <div id="intensity-level-btns-container">
+            <div class="intensity-level-btns">
+              <input
+                type="radio"
+                id="beginner"
+                name="intensity_level"
+                value="Beginner"
+                checked
+              />
+              <label for="beginner">Beginner</label>
+            </div>
+
+            <div class="intensity-level-btns">
+              <input
+                type="radio"
+                id="intermediate"
+                name="intensity_level"
+                value="Intermediate"
+              />
+              <label for="intermediate">Intermediate</label>
+            </div>
+
+            <div class="intensity-level-btns">
+              <input
+                type="radio"
+                id="advanced"
+                name="intensity_level"
+                value="Advanced"
+              />
+              <label for="advanced">Advanced</label>
+            </div>
+          </div>
+        </div>
+
+        <div id="targeted-muscles-container">
+          <h2 id="targeted-muscles">Muscles</h2>
+          <div id="upper-body-container">
+            <h3 id="upper-body">Upper Body</h3>
+            <div class="muscles-container">
+              <div class="muscles">
+                <input type="checkbox" accesskey="1" id="muscle1" />1 -
+                Shoulders
+              </div>
+              <div class="muscles">
+                <input type="checkbox" accesskey="2" id="muscle2" />2 - Chest
+              </div>
+              <div class="muscles">
+                <input type="checkbox" accesskey="3" id="muscle3" />3 - Triceps
+              </div>
+              <div class="muscles">
+                <input type="checkbox" accesskey="4" id="muscle4" />4 - Biceps
+              </div>
+              <div class="muscles">
+                <input type="checkbox" accesskey="5" id="muscle5" />5 - Back
+              </div>
+              <div class="muscles">
+                <input type="checkbox" accesskey="6" id="muscle6" />6 -
+                Abdominals
+              </div>
+            </div>
+          </div>
+          <div id="lower-body-container">
+            <h3 id="lower-body">Lower Body</h3>
+            <div class="muscles-container">
+              <div class="muscles">
+                <input type="checkbox" accesskey="7" id="muscle7" />7 - Glutes
+              </div>
+              <div class="muscles">
+                <input type="checkbox" accesskey="8" id="muscle8" />8 -
+                Quadriceps
+              </div>
+              <div class="muscles">
+                <input type="checkbox" accesskey="9" id="muscle9" />9 -
+                Hamstrings
+              </div>
+              <div class="muscles">
+                <input type="checkbox" accesskey="0" id="muscle10" />0 - Calves
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div id="generate-btn-container">
+          <button onclick="generate()" id="generate-btn">Generate</button>
+        </div>
+      </div>
+
+      <div id="right">
+        <div
+          class="workouts-container hidden"
+          id="workout-container-1"
+          onclick="openWorkoutInfo(0)"
+        >
+          <img
+            id="workout1"
+            class="workouts"
+            src="https://i0.wp.com/post.healthline.com/wp-content/uploads/2021/04/400x400_12-Pushup_Alternatives_to_Build_Size_and_Strength_Incline_Pushup.gif?h=840"
+            alt="incline push ups"
+          />
+          <div id="workout-name-1" class="workout-name">Workout</div>
+        </div>
+        <div
+          class="workouts-container hidden"
+          id="workout-container-2"
+          onclick="openWorkoutInfo(1)"
+        >
+          <img
+            id="workout2"
+            class="workouts"
+            src="https://s3assets.skimble.com/assets/562032/image_iphone.jpg"
+            alt="mountain climbers"
+          />
+          <div id="workout-name-2" class="workout-name">Workout</div>
+        </div>
+        <div
+          class="workouts-container hidden"
+          id="workout-container-3"
+          onclick="openWorkoutInfo(2)"
+        >
+          <img
+            id="workout3"
+            class="workouts"
+            src="https://i0.wp.com/post.healthline.com/wp-content/uploads/2021/04/400x400_Moves_To_Make_The_Most_of_Your_At_Home_Workout_Plank_to_Downward_Dog.gif?h=840"
+            alt="plank to downward dog"
+          />
+          <div id="workout-name-3" class="workout-name">Workout</div>
+        </div>
+        <div
+          class="workouts-container hidden"
+          id="workout-container-4"
+          onclick="openWorkoutInfo(3)"
+        >
+          <img
+            id="workout4"
+            class="workouts"
+            src="https://s3assets.skimble.com/assets/562032/image_iphone.jpg"
+            alt="mountain climbers"
+          />
+          <div id="workout-name-4" class="workout-name">Workout</div>
+        </div>
+        <div
+          class="workouts-container hidden"
+          id="workout-container-5"
+          onclick="openWorkoutInfo(4)"
+        >
+          <img
+            id="workout5"
+            class="workouts"
+            src="https://s3assets.skimble.com/assets/562032/image_iphone.jpg"
+            alt="mountain climbers"
+          />
+          <div id="workout-name-5" class="workout-name">Workout</div>
+        </div>
+        <div
+          class="workouts-container hidden"
+          id="workout-container-6"
+          onclick="openWorkoutInfo(5)"
+        >
+          <img
+            id="workout6"
+            class="workouts"
+            src="https://s3assets.skimble.com/assets/562032/image_iphone.jpg"
+            alt="mountain climbers"
+          />
+          <div id="workout-name-6" class="workout-name">Workout</div>
+        </div>
+        <div
+          class="workouts-container hidden"
+          id="workout-container-7"
+          onclick="openWorkoutInfo(6)"
+        >
+          <img
+            id="workout7"
+            class="workouts"
+            src="https://s3assets.skimble.com/assets/562032/image_iphone.jpg"
+            alt="mountain climbers"
+          />
+          <div id="workout-name-7" class="workout-name">Workout</div>
+        </div>
+        <div
+          class="workouts-container hidden"
+          id="workout-container-8"
+          onclick="openWorkoutInfo(7)"
+        >
+          <img
+            id="workout8"
+            class="workouts"
+            src="https://s3assets.skimble.com/assets/562032/image_iphone.jpg"
+            alt="mountain climbers"
+          />
+          <div id="workout-name-8" class="workout-name">Workout</div>
+        </div>
+        <div
+          class="workouts-container hidden"
+          id="workout-container-9"
+          onclick="openWorkoutInfo(8)"
+        >
+          <img
+            id="workout9"
+            class="workouts"
+            src="https://s3assets.skimble.com/assets/562032/image_iphone.jpg"
+            alt="mountain climbers"
+          />
+          <div id="workout-name-9" class="workout-name">Workout</div>
+        </div>
+        <div
+          class="workouts-container hidden"
+          id="workout-container-10"
+          onclick="openWorkoutInfo(9)"
+        >
+          <img
+            id="workout10"
+            class="workouts"
+            src="https://s3assets.skimble.com/assets/562032/image_iphone.jpg"
+            alt="mountain climbers"
+          />
+          <div id="workout-name-10" class="workout-name">Workout</div>
+        </div>
+      </div>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
+
+<div class="hidden" id="workout-info">
+  <button id="close-button" onclick="closeWorkoutInfo()">&times;</button>
+  <img
+    id="workout-info-pic"
+    src="https://i0.wp.com/post.healthline.com/wp-content/uploads/2021/04/400x400_12-Pushup_Alternatives_to_Build_Size_and_Strength_Incline_Pushup.gif?h=840"
+    alt="incline push ups"
+  />
+  <p class="workout-info-text" id="intensity-level-info">
+    <strong>Intensity Level: </strong>
+  </p>
+  <p class="workout-info-text" id="workout-name-info">
+    <strong>Workout Name: </strong>
+  </p>
+  <p class="workout-info-text" id="targeted-muscles-info">
+    <strong>Targeted Muscles: </strong>
+  </p>
+  <p class="workout-info-text" id="workout-link-info">
+    <strong>Workout Link: </strong>
+  </p>
+</div>

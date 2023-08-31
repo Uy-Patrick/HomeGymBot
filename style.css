@@ -1,0 +1,284 @@
+* {
+  box-sizing: border-box;
+  z-index: 10;
+}
+
+html,
+body {
+  height: 100%;
+}
+
+/* #right,
+#home-gym-bot,
+#left {
+  border: 2px solid red;
+}
+
+#intensity-level-container,
+#targeted-muscles-container,
+.workouts-container,
+#generate-btn-container {
+  border: 2px solid orange;
+}
+
+#intensity-level,
+#intensity-level-btns-container,
+#targeted-muscles,
+#upper-body-container,
+#lower-body-container,
+.workouts,
+#generate-btn {
+  border: 2px solid yellow;
+}
+
+.intensity-level-btns,
+#upper-body,
+#lower-body,
+.workout-name {
+  border: 2px solid green;
+}
+
+.muscles-container {
+  border: 2px solid blue;
+}
+
+.muscles {
+  border: 2px solid indigo;
+} */
+
+body {
+  background-color: rgba(176, 210, 233, 0.5); /* remove later */
+  text-align: center;
+  font-family: "Roboto Condensed", sans-serif;
+  font-size: 18px;
+  margin: 0;
+}
+
+.hidden {
+  display: none;
+}
+
+#body-container {
+  display: flex;
+  flex-wrap: nowrap;
+  justify-content: space-between;
+}
+
+#home-gym-bot {
+  height: 70px;
+  width: 100%;
+  font-size: 48px;
+  padding-top: 8px;
+  /* background-color: rgb(152, 236, 232); */
+  /* background-color: rgb(41, 159, 228); */
+  /* position: fixed; */
+  /* z-index: 10; */
+}
+
+#workout-info {
+  height: 80%;
+  width: 36%;
+  min-width: 400px;
+  border-radius: 20px;
+  background-color: white;
+  /* background-color: rgb(131, 224, 220); */
+  position: fixed;
+  top: 55%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 14;
+  overflow-y: auto;
+}
+
+#close-button {
+  position: absolute;
+  top: 15px;
+  right: 10px;
+}
+
+#workout-info-pic {
+  width: 60%;
+  margin: 30px;
+  border: 2px solid black;
+}
+
+.workout-info-text {
+  margin: 0px 10px 20px 10px;
+  text-align: left;
+}
+
+#fade-background {
+  top: 0%;
+  height: 100%;
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.6);
+  position: fixed;
+  z-index: 12;
+}
+
+#background-image {
+  left: 5%;
+  position: fixed;
+  opacity: 10%;
+  width: 90%;
+  z-index: 1;
+}
+
+#left {
+  /* float: left; */
+  width: 25%;
+  height: 100%;
+  min-width: 320px;
+  min-height: 600px;
+  /* margin: 110px 25px 25px 25px; */
+  margin: 25px;
+  border-radius: 50px;
+  /* background-color: rgba(131, 224, 220, 0.7); */
+  display: flex;
+  flex-wrap: wrap;
+  align-items: start;
+}
+
+#intensity-level-container,
+#targeted-muscles-container {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: start;
+  /* background-color: rgba(131, 224, 220, 0.7); */
+  background-image: linear-gradient(
+    to bottom right,
+    rgb(131, 224, 220),
+    rgb(41, 159, 228)
+  );
+  padding-bottom: 25px;
+}
+
+/* intensity level */
+#intensity-level-container {
+  border-radius: 30px;
+}
+
+#intensity-level,
+#targeted-muscles {
+  color: rgb(12, 20, 138);
+  margin: 20px 0px;
+}
+#intensity-level {
+  width: 100%;
+}
+
+#intensity-level-btns-container {
+  width: 100%;
+  display: flex;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+}
+
+/* .intensity-level-btns {
+  border: 2px solid green;
+} */
+
+/* muscles */
+#targeted-muscles-container {
+  border-radius: 40px;
+}
+
+#targeted-muscles {
+  width: 100%;
+}
+
+#upper-body,
+#lower-body {
+  width: 100%;
+  margin-top: 12px;
+  margin-bottom: 15px;
+}
+
+/* upper body */
+#upper-body-container,
+#lower-body-container {
+  width: 50%;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.muscles {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+/* generate btn */
+#generate-btn-container {
+  width: 100%;
+}
+
+#generate-btn {
+  width: 50%;
+  height: 50px;
+  border-radius: 30px;
+  /* border: 2px solid rgb(26, 29, 29); */
+  background-color: rgb(38, 141, 189);
+  font-size: 20px;
+  font-weight: 300;
+}
+
+#generate-btn:hover {
+  box-shadow: 0 10px 10px 0 rgba(0, 0, 0, 0.2), 0 10px 10px 0 rgba(0, 0, 0, 0.2);
+}
+
+/* workouts */
+#right {
+  /* float: right; */
+  background-image: linear-gradient(
+    to bottom right,
+    rgb(157, 240, 236),
+    rgb(131, 224, 220)
+  );
+  background-color: rgb(157, 240, 236);
+  /* background-color: rgba(131, 224, 220, 0.7); */
+  /* background-image: linear-gradient(
+    to bottom right,
+    rgb(131, 224, 220),
+    rgb(41, 159, 228)
+  ); */
+  width: 65%;
+  /* margin: 110px 25px 25px 25px; */
+  margin: 25px;
+  min-width: 250px;
+  min-height: 600px;
+  border-radius: 50px;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: start;
+  justify-content: space-evenly;
+}
+
+.workouts-container {
+  position: relative;
+  min-width: 170px;
+  width: 20%;
+  margin: 30px;
+  text-align: left;
+}
+
+.workouts {
+  width: 100%;
+  border: 2px double black;
+  /* display: none; */
+}
+
+.workout-name {
+  position: absolute;
+  font-size: 20px;
+  width: 100%;
+  height: 25px;
+  bottom: 5px;
+  border: 1px solid black;
+  padding: 0px 5px;
+  background-color: rgba(0, 0, 0, 0.45);
+  color: rgba(255, 255, 255, 0.8);
+  text-shadow: 0 0 3px black, 0 0 5px black;
+}
