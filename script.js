@@ -784,7 +784,9 @@ const changeWorkoutsDisplayed = function () {
     ] of workoutOutputs.entries()) {
       if (cosSim > 0) {
         document.getElementById(`workout-name-${index + 1}`).textContent =
-          workoutName;
+          workoutName.length > 12
+            ? workoutName.slice(0, 12) + "..."
+            : workoutName;
         document.getElementById(`workout${index + 1}`).src = workoutPic;
         document.getElementById(`workout${index + 1}`).alt = workoutName;
         document
@@ -812,8 +814,15 @@ const changeWorkoutsDisplayed = function () {
       ],
     ] of workoutOutputs.entries()) {
       if (cosSim > 0) {
+        // const name1 = "Side Plank with Leg Raises";
+
+        // if (name1.length > 10) {
+        //   console.log(name1.slice(0, 10) + "...");
+        // } else console.log(name1);
         document.getElementById(`workout-name-${index + 1}`).textContent =
-          workoutName;
+          workoutName.length > 12
+            ? workoutName.slice(0, 12) + "..."
+            : workoutName;
         document.getElementById(`workout${index + 1}`).src = workoutPic;
         document.getElementById(`workout${index + 1}`).alt = workoutName;
         document
@@ -842,7 +851,9 @@ const changeWorkoutsDisplayed = function () {
     ] of workoutOutputs.entries()) {
       if (cosSim > 0) {
         document.getElementById(`workout-name-${index + 1}`).textContent =
-          workoutName;
+          workoutName.length > 12
+            ? workoutName.slice(0, 12) + "..."
+            : workoutName;
         document.getElementById(`workout${index + 1}`).src = workoutPic;
         document.getElementById(`workout${index + 1}`).alt = workoutName;
         document
