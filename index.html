@@ -7,7 +7,6 @@
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
-    <div id="home-gym-bot">HomeGymBot</div>
     <div class="hidden" id="workout-info">
       <button id="close-button" onclick="closeWorkoutInfo()">&times;</button>
       <img
@@ -36,6 +35,7 @@
     />
     <div id="body-container">
       <div id="left">
+        <div id="home-gym-bot">HomeGymBot</div>
         <div id="intensity-level-container">
           <h2 id="intensity-level">Intensity Level</h2>
           <div id="intensity-level-btns-container">
@@ -261,24 +261,3 @@
     <script src="script.js"></script>
   </body>
 </html>
-
-<div class="hidden" id="workout-info">
-  <button id="close-button" onclick="closeWorkoutInfo()">&times;</button>
-  <img
-    id="workout-info-pic"
-    src="https://i0.wp.com/post.healthline.com/wp-content/uploads/2021/04/400x400_12-Pushup_Alternatives_to_Build_Size_and_Strength_Incline_Pushup.gif?h=840"
-    alt="incline push ups"
-  />
-  <p class="workout-info-text" id="intensity-level-info">
-    <strong>Intensity Level: </strong>
-  </p>
-  <p class="workout-info-text" id="workout-name-info">
-    <strong>Workout Name: </strong>
-  </p>
-  <p class="workout-info-text" id="targeted-muscles-info">
-    <strong>Targeted Muscles: </strong>
-  </p>
-  <p class="workout-info-text" id="workout-link-info">
-    <strong>Workout Link: </strong>
-  </p>
-</div>
