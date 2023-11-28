@@ -3,6 +3,7 @@
 const body = document.querySelector("body");
 
 const workoutInfo = document.getElementById("workout-info");
+const usersManual = document.getElementById("users-manual");
 const fadeBackground = document.getElementById("fade-background");
 
 const workoutInfoPic = document.getElementById("workout-info-pic");
@@ -665,25 +666,27 @@ const generate = function () {
       document.getElementById(`workout-container-${i}`).classList.add("hidden");
     }
   }
-  if (
-    upperBodyTargetMuscles.includes(1) ||
-    lowerBodyTargetMuscles.includes(1)
-  ) {
-    if (radio1.checked) {
-      console.log("Intensity level: Beginner");
-      getBeginnerWorkouts();
-    } else if (radio2.checked) {
-      console.log("Intensity level: Intermediate");
-      getIntermediateWorkouts();
-    } else if (radio3.checked) {
-      console.log("Intensity level: Advanced");
-      getAdvancedWorkouts();
+  setTimeout(() => {
+    if (
+      upperBodyTargetMuscles.includes(1) ||
+      lowerBodyTargetMuscles.includes(1)
+    ) {
+      if (radio1.checked) {
+        console.log("Intensity level: Beginner");
+        getBeginnerWorkouts();
+      } else if (radio2.checked) {
+        console.log("Intensity level: Intermediate");
+        getIntermediateWorkouts();
+      } else if (radio3.checked) {
+        console.log("Intensity level: Advanced");
+        getAdvancedWorkouts();
+      }
+      changeWorkoutsDisplayed();
     }
-    changeWorkoutsDisplayed();
-  }
-  console.log("*** generate() reached");
-  console.log("------------------------------");
-  console.log(workoutOutputs);
+    console.log("*** generate() reached");
+    console.log("------------------------------");
+    console.log(workoutOutputs);
+  }, 100);
 };
 
 const getBeginnerWorkouts = function () {
@@ -880,8 +883,15 @@ const openWorkoutInfo = function (num) {
   displayWorkoutInfo(num);
 };
 
+const openUsersManual = function (num) {
+  usersManual.classList.remove("hidden");
+  fadeBackground.classList.remove("hidden");
+  body.style.overflow = "hidden";
+};
+
 const closeWorkoutInfo = function () {
   workoutInfo.classList.add("hidden");
+  usersManual.classList.add("hidden");
   fadeBackground.classList.add("hidden");
   body.style.overflow = "auto";
 };
