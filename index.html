@@ -27,17 +27,32 @@
         <strong>Workout Link: </strong>
       </p>
     </div>
+
+    <div class="hidden" id="users-manual">
+      <p><b>1.&#41; Select Intensity Level</b></p>
+      <img src="User's Manual Step 1.png" alt="user's manual step 1" />
+      <p><b>2.&#41; Select Muscle Targets</b></p>
+      <img src="User's Manual Step 2.png" alt="user's manual step 2" />
+      <p><b>3.&#41; Click the “Generate” button</b></p>
+      <img src="User's Manual Step 3.png" alt="user's manual step 3" />
+      <p><b>4.&#41; Click on a workout for details</b></p>
+      <img src="User's Manual Step 4.png" alt="user's manual step 4" />
+      <p><b>5.&#41; Click on the link to see a how-to guide</b></p>
+      <img src="User's Manual Step 5.png" alt="user's manual step 5" />
+    </div>
+
     <div class="hidden" id="fade-background" onclick="closeWorkoutInfo()"></div>
     <img
       id="background-image"
       src="https://png.pngitem.com/pimgs/s/179-1796315_bodybuilder-clip-art-transparent-cartoon-muscle-man-hd.png"
       alt="a muscular cartoon man as the background image"
     />
+
     <div id="body-container">
       <div id="left">
-        <div id="home-gym-bot">HomeGymBot</div>
+        <img src="logo.png" alt="HomeGymBot logo" id="logo" />
         <div id="intensity-level-container">
-          <h2 id="intensity-level">Intensity Level</h2>
+          <h2 id="intensity-level">INTENSITY LEVEL</h2>
           <div id="intensity-level-btns-container">
             <div class="intensity-level-btns">
               <input
@@ -73,7 +88,7 @@
         </div>
 
         <div id="targeted-muscles-container">
-          <h2 id="targeted-muscles">Muscles</h2>
+          <h2 id="targeted-muscles">MUSCLES</h2>
           <div id="upper-body-container">
             <h3 id="upper-body">Upper Body</h3>
             <div class="muscles-container">
@@ -121,7 +136,9 @@
         </div>
 
         <div id="generate-btn-container">
-          <button onclick="generate()" id="generate-btn">Generate</button>
+          <div>
+            <button onclick="generate()" id="generate-btn">Generate</button>
+          </div>
         </div>
       </div>
 
@@ -256,6 +273,7 @@
           />
           <div id="workout-name-10" class="workout-name">Workout</div>
         </div>
+        <div id="help" onclick="openUsersManual()">?</div>
       </div>
     </div>
     <script src="script.js"></script>
