@@ -30,6 +30,9 @@ const radio3 = document.getElementById("advanced");
 const upperBodyTargetMuscles = [0, 0, 0, 0, 0, 0];
 const lowerBodyTargetMuscles = [0, 0, 0, 0];
 
+const upperBodyOutputs = 5;
+const lowerBodyOutputs = 5;
+
 // Upper Body Data
 // value: [shoulders, chest, triceps, biceps, back, abdominals]
 // 7
@@ -47,7 +50,8 @@ const beginnerUpperBodyWorkouts = [
   {
     workoutName: "Push Up",
     value: [1, 1, 1, 1, 1, 1],
-    workoutPic: "https://thumbs.gfycat.com/GlossySkinnyDuckbillcat-max-1mb.gif",
+    workoutPic:
+      "https://hips.hearstapps.com/hmg-prod/images/766/fitgif-friday-pushup-slider-thumbnail-override-1515520802.gif",
     intensityLevel: "Beginner",
     targetedMuscles: "Shoulders, Chest, Triceps, Biceps, Back, Abdominals",
     workoutLink:
@@ -644,7 +648,7 @@ const getUpperWorkouts = function (arr) {
   upperBodyWorkoutOutputs = getCosineSimilarityUpper(
     upperBodyTargetMuscles,
     arr
-  ).slice(0, 5);
+  ).slice(0, upperBodyOutputs);
   return upperBodyWorkoutOutputs;
 };
 
@@ -652,20 +656,25 @@ const getLowerWorkouts = function (arr) {
   lowerBodyWorkoutOutputs = getCosineSimilarityLower(
     lowerBodyTargetMuscles,
     arr
-  ).slice(0, 3);
+  ).slice(0, lowerBodyOutputs);
   return lowerBodyWorkoutOutputs;
 };
 
 const generate = function () {
-  for (let i = 1; i < 10; i++) {
+  for (let i = 1; i <= 10; i++) {
     if (
       !document
-        .getElementById(`workout-container-${i}`)
+        .getElementById(`workout-container-container-${i}`)
         .classList.contains("hidden")
     ) {
-      document.getElementById(`workout-container-${i}`).classList.add("hidden");
+      document
+        .getElementById(`workout-container-container-${i}`)
+        .classList.add("hidden");
     }
   }
+  document.getElementById("upper").classList.add("hidden");
+  document.getElementById("lower").classList.add("hidden");
+
   setTimeout(() => {
     if (
       upperBodyTargetMuscles.includes(1) ||
@@ -770,8 +779,8 @@ const changeWorkoutsDisplayed = function () {
   ) {
     // both upper and lower muscles have been selected
     workoutOutputs = upperBodyWorkoutOutputs
-      .slice(0, 3)
-      .concat(lowerBodyWorkoutOutputs.slice(0, 2));
+      .slice(0, upperBodyOutputs)
+      .concat(lowerBodyWorkoutOutputs.slice(0, lowerBodyOutputs));
 
     for (const [
       index,
@@ -786,15 +795,21 @@ const changeWorkoutsDisplayed = function () {
       ],
     ] of workoutOutputs.entries()) {
       if (cosSim > 0) {
-        document.getElementById(`workout-name-${index + 1}`).textContent =
-          workoutName.length > 12
-            ? workoutName.slice(0, 12) + "..."
-            : workoutName;
         document.getElementById(`workout${index + 1}`).src = workoutPic;
         document.getElementById(`workout${index + 1}`).alt = workoutName;
+        document.getElementById(
+          `workout-name-details-${index + 1}`
+        ).textContent = workoutName;
+        document.getElementById(
+          `workout-targets-details-${index + 1}`
+        ).textContent = "Targeted Muscles: " + targetedMuscles;
+
         document
-          .getElementById(`workout-container-${index + 1}`)
+          .getElementById(`workout-container-container-${index + 1}`)
           .classList.remove("hidden");
+        document.getElementById("upper").classList.remove("hidden");
+        document.getElementById("lower").classList.remove("hidden");
+        document.getElementById("upper").innerHTML = "<b><u>UPPER BODY</b></u>";
       }
     }
     console.log("3 upper and 3 for lower");
@@ -817,20 +832,20 @@ const changeWorkoutsDisplayed = function () {
       ],
     ] of workoutOutputs.entries()) {
       if (cosSim > 0) {
-        // const name1 = "Side Plank with Leg Raises";
-
-        // if (name1.length > 10) {
-        //   console.log(name1.slice(0, 10) + "...");
-        // } else console.log(name1);
-        document.getElementById(`workout-name-${index + 1}`).textContent =
-          workoutName.length > 12
-            ? workoutName.slice(0, 12) + "..."
-            : workoutName;
         document.getElementById(`workout${index + 1}`).src = workoutPic;
         document.getElementById(`workout${index + 1}`).alt = workoutName;
+        document.getElementById(
+          `workout-name-details-${index + 1}`
+        ).textContent = workoutName;
+        document.getElementById(
+          `workout-targets-details-${index + 1}`
+        ).textContent = "Targeted Muscles: " + targetedMuscles;
+
         document
-          .getElementById(`workout-container-${index + 1}`)
+          .getElementById(`workout-container-container-${index + 1}`)
           .classList.remove("hidden");
+        document.getElementById("upper").innerHTML = "<b><u>UPPER BODY</b></u>";
+        document.getElementById("upper").classList.remove("hidden");
       }
     }
     console.log("5 for upper");
@@ -853,15 +868,20 @@ const changeWorkoutsDisplayed = function () {
       ],
     ] of workoutOutputs.entries()) {
       if (cosSim > 0) {
-        document.getElementById(`workout-name-${index + 1}`).textContent =
-          workoutName.length > 12
-            ? workoutName.slice(0, 12) + "..."
-            : workoutName;
         document.getElementById(`workout${index + 1}`).src = workoutPic;
         document.getElementById(`workout${index + 1}`).alt = workoutName;
+        document.getElementById(
+          `workout-name-details-${index + 1}`
+        ).textContent = workoutName;
+        document.getElementById(
+          `workout-targets-details-${index + 1}`
+        ).textContent = "Targeted Muscles: " + targetedMuscles;
+
         document
-          .getElementById(`workout-container-${index + 1}`)
+          .getElementById(`workout-container-container-${index + 1}`)
           .classList.remove("hidden");
+        document.getElementById("upper").classList.remove("hidden");
+        document.getElementById("upper").innerHTML = "<b><u>LOWER BODY</b></u>";
       }
     }
     console.log("5 for lower");
