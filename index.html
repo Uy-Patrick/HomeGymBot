@@ -4,16 +4,16 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>HomeGymBot</title>
+    <link
+      href="https://fonts.googleapis.com/css?family=Roboto"
+      rel="stylesheet"
+    />
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
     <div class="hidden" id="workout-info">
       <button id="close-button" onclick="closeWorkoutInfo()">&times;</button>
-      <img
-        id="workout-info-pic"
-        src="https://i0.wp.com/post.healthline.com/wp-content/uploads/2021/04/400x400_12-Pushup_Alternatives_to_Build_Size_and_Strength_Incline_Pushup.gif?h=840"
-        alt="incline push ups"
-      />
+      <img id="workout-info-pic" src="" alt="" />
       <p class="workout-info-text" id="intensity-level-info">
         <strong>Intensity Level: </strong>
       </p>
@@ -93,24 +93,22 @@
             <h3 id="upper-body">Upper Body</h3>
             <div class="muscles-container">
               <div class="muscles">
-                <input type="checkbox" accesskey="1" id="muscle1" />1 -
-                Shoulders
+                <input type="checkbox" id="muscle1" />Shoulders
               </div>
               <div class="muscles">
-                <input type="checkbox" accesskey="2" id="muscle2" />2 - Chest
+                <input type="checkbox" id="muscle2" />Chest
               </div>
               <div class="muscles">
-                <input type="checkbox" accesskey="3" id="muscle3" />3 - Triceps
+                <input type="checkbox" id="muscle3" />Triceps
               </div>
               <div class="muscles">
-                <input type="checkbox" accesskey="4" id="muscle4" />4 - Biceps
+                <input type="checkbox" id="muscle4" />Biceps
               </div>
               <div class="muscles">
-                <input type="checkbox" accesskey="5" id="muscle5" />5 - Back
+                <input type="checkbox" id="muscle5" />Back
               </div>
               <div class="muscles">
-                <input type="checkbox" accesskey="6" id="muscle6" />6 -
-                Abdominals
+                <input type="checkbox" id="muscle6" />Abdominals
               </div>
             </div>
           </div>
@@ -118,18 +116,16 @@
             <h3 id="lower-body">Lower Body</h3>
             <div class="muscles-container">
               <div class="muscles">
-                <input type="checkbox" accesskey="7" id="muscle7" />7 - Glutes
+                <input type="checkbox" id="muscle7" />Glutes
               </div>
               <div class="muscles">
-                <input type="checkbox" accesskey="8" id="muscle8" />8 -
-                Quadriceps
+                <input type="checkbox" id="muscle8" />Quadriceps
               </div>
               <div class="muscles">
-                <input type="checkbox" accesskey="9" id="muscle9" />9 -
-                Hamstrings
+                <input type="checkbox" id="muscle9" />Hamstrings
               </div>
               <div class="muscles">
-                <input type="checkbox" accesskey="0" id="muscle10" />0 - Calves
+                <input type="checkbox" id="muscle10" />Calves
               </div>
             </div>
           </div>
@@ -143,136 +139,184 @@
       </div>
 
       <div id="right">
-        <div
-          class="workouts-container hidden"
-          id="workout-container-1"
-          onclick="openWorkoutInfo(0)"
-        >
-          <img
-            id="workout1"
-            class="workouts"
-            src="https://i0.wp.com/post.healthline.com/wp-content/uploads/2021/04/400x400_12-Pushup_Alternatives_to_Build_Size_and_Strength_Incline_Pushup.gif?h=840"
-            alt="incline push ups"
-          />
-          <div id="workout-name-1" class="workout-name">Workout</div>
+        <div class="upper-lower hidden" id="upper">
+          <b><u>UPPER BODY</u></b>
         </div>
         <div
-          class="workouts-container hidden"
-          id="workout-container-2"
-          onclick="openWorkoutInfo(1)"
+          class="workouts-container-container hidden"
+          id="workout-container-container-1"
         >
-          <img
-            id="workout2"
-            class="workouts"
-            src="https://s3assets.skimble.com/assets/562032/image_iphone.jpg"
-            alt="mountain climbers"
-          />
-          <div id="workout-name-2" class="workout-name">Workout</div>
+          <span
+            class="workouts-container"
+            id="workout-container-1"
+            onclick="openWorkoutInfo(0)"
+          >
+            <img id="workout1" class="workouts" src="" alt="" />
+          </span>
+
+          <span class="workout-details" id="workout-details-1">
+            <div id="workout-name-details-1"></div>
+            <div id="workout-targets-details-1"></div>
+          </span>
         </div>
+
         <div
-          class="workouts-container hidden"
-          id="workout-container-3"
-          onclick="openWorkoutInfo(2)"
+          class="workouts-container-container hidden"
+          id="workout-container-container-2"
         >
-          <img
-            id="workout3"
-            class="workouts"
-            src="https://i0.wp.com/post.healthline.com/wp-content/uploads/2021/04/400x400_Moves_To_Make_The_Most_of_Your_At_Home_Workout_Plank_to_Downward_Dog.gif?h=840"
-            alt="plank to downward dog"
-          />
-          <div id="workout-name-3" class="workout-name">Workout</div>
+          <span
+            class="workouts-container"
+            id="workout-container-2"
+            onclick="openWorkoutInfo(1)"
+          >
+            <img id="workout2" class="workouts" src="" alt="" />
+          </span>
+          <span class="workout-details" id="workout-details-2">
+            <div id="workout-name-details-2"></div>
+            <div id="workout-targets-details-2"></div>
+          </span>
         </div>
+
         <div
-          class="workouts-container hidden"
-          id="workout-container-4"
-          onclick="openWorkoutInfo(3)"
+          class="workouts-container-container hidden"
+          id="workout-container-container-3"
         >
-          <img
-            id="workout4"
-            class="workouts"
-            src="https://s3assets.skimble.com/assets/562032/image_iphone.jpg"
-            alt="mountain climbers"
-          />
-          <div id="workout-name-4" class="workout-name">Workout</div>
+          <span
+            class="workouts-container"
+            id="workout-container-3"
+            onclick="openWorkoutInfo(2)"
+          >
+            <img id="workout3" class="workouts" src="" alt="" />
+          </span>
+          <span class="workout-details" id="workout-details-3">
+            <div id="workout-name-details-3"></div>
+            <div id="workout-targets-details-3"></div>
+          </span>
         </div>
+
         <div
-          class="workouts-container hidden"
-          id="workout-container-5"
-          onclick="openWorkoutInfo(4)"
+          class="workouts-container-container hidden"
+          id="workout-container-container-4"
         >
-          <img
-            id="workout5"
-            class="workouts"
-            src="https://s3assets.skimble.com/assets/562032/image_iphone.jpg"
-            alt="mountain climbers"
-          />
-          <div id="workout-name-5" class="workout-name">Workout</div>
+          <span
+            class="workouts-container"
+            id="workout-container-4"
+            onclick="openWorkoutInfo(3)"
+          >
+            <img id="workout4" class="workouts" src="" alt="" />
+          </span>
+          <span class="workout-details" id="workout-details-4">
+            <div id="workout-name-details-4"></div>
+            <div id="workout-targets-details-4"></div>
+          </span>
         </div>
+
         <div
-          class="workouts-container hidden"
-          id="workout-container-6"
-          onclick="openWorkoutInfo(5)"
+          class="workouts-container-container hidden"
+          id="workout-container-container-5"
         >
-          <img
-            id="workout6"
-            class="workouts"
-            src="https://s3assets.skimble.com/assets/562032/image_iphone.jpg"
-            alt="mountain climbers"
-          />
-          <div id="workout-name-6" class="workout-name">Workout</div>
+          <span
+            class="workouts-container"
+            id="workout-container-5"
+            onclick="openWorkoutInfo(4)"
+          >
+            <img id="workout5" class="workouts" src="" alt="" />
+          </span>
+          <span class="workout-details" id="workout-details-5">
+            <div id="workout-name-details-5"></div>
+            <div id="workout-targets-details-5"></div>
+          </span>
         </div>
+
+        <div class="upper-lower hidden" id="lower">
+          <b><u>LOWER BODY</u></b>
+        </div>
+
         <div
-          class="workouts-container hidden"
-          id="workout-container-7"
-          onclick="openWorkoutInfo(6)"
+          class="workouts-container-container hidden"
+          id="workout-container-container-6"
         >
-          <img
-            id="workout7"
-            class="workouts"
-            src="https://s3assets.skimble.com/assets/562032/image_iphone.jpg"
-            alt="mountain climbers"
-          />
-          <div id="workout-name-7" class="workout-name">Workout</div>
+          <span
+            class="workouts-container"
+            id="workout-container-6"
+            onclick="openWorkoutInfo(5)"
+          >
+            <img id="workout6" class="workouts" src="" alt="" />
+          </span>
+          <span class="workout-details" id="workout-details-6">
+            <div id="workout-name-details-6"></div>
+            <div id="workout-targets-details-6"></div>
+          </span>
         </div>
+
         <div
-          class="workouts-container hidden"
-          id="workout-container-8"
-          onclick="openWorkoutInfo(7)"
+          class="workouts-container-container hidden"
+          id="workout-container-container-7"
         >
-          <img
-            id="workout8"
-            class="workouts"
-            src="https://s3assets.skimble.com/assets/562032/image_iphone.jpg"
-            alt="mountain climbers"
-          />
-          <div id="workout-name-8" class="workout-name">Workout</div>
+          <span
+            class="workouts-container"
+            id="workout-container-7"
+            onclick="openWorkoutInfo(6)"
+          >
+            <img id="workout7" class="workouts" src="" alt="" />
+          </span>
+          <span class="workout-details" id="workout-details-7">
+            <div id="workout-name-details-7"></div>
+            <div id="workout-targets-details-7"></div>
+          </span>
         </div>
+
         <div
-          class="workouts-container hidden"
-          id="workout-container-9"
-          onclick="openWorkoutInfo(8)"
+          class="workouts-container-container hidden"
+          id="workout-container-container-8"
         >
-          <img
-            id="workout9"
-            class="workouts"
-            src="https://s3assets.skimble.com/assets/562032/image_iphone.jpg"
-            alt="mountain climbers"
-          />
-          <div id="workout-name-9" class="workout-name">Workout</div>
+          <span
+            class="workouts-container"
+            id="workout-container-8"
+            onclick="openWorkoutInfo(7)"
+          >
+            <img id="workout8" class="workouts" src="" alt="" />
+          </span>
+          <span class="workout-details" id="workout-details-8">
+            <div id="workout-name-details-8"></div>
+            <div id="workout-targets-details-8"></div>
+          </span>
         </div>
+
         <div
-          class="workouts-container hidden"
-          id="workout-container-10"
-          onclick="openWorkoutInfo(9)"
+          class="workouts-container-container hidden"
+          id="workout-container-container-9"
         >
-          <img
-            id="workout10"
-            class="workouts"
-            src="https://s3assets.skimble.com/assets/562032/image_iphone.jpg"
-            alt="mountain climbers"
-          />
-          <div id="workout-name-10" class="workout-name">Workout</div>
+          <span
+            class="workouts-container"
+            id="workout-container-9"
+            onclick="openWorkoutInfo(8)"
+          >
+            <img id="workout9" class="workouts" src="" alt="" />
+          </span>
+          <span class="workout-details" id="workout-details-9">
+            <div id="workout-name-details-9"></div>
+            <div id="workout-targets-details-9"></div>
+          </span>
         </div>
+
+        <div
+          class="workouts-container-container hidden"
+          id="workout-container-container-10"
+        >
+          <span
+            class="workouts-container"
+            id="workout-container-10"
+            onclick="openWorkoutInfo(9)"
+          >
+            <img id="workout10" class="workouts" src="" alt="" />
+          </span>
+          <span class="workout-details" id="workout-details-10">
+            <div id="workout-name-details-10"></div>
+            <div id="workout-targets-details-10"></div>
+          </span>
+        </div>
+
         <div id="help" onclick="openUsersManual()">?</div>
       </div>
     </div>
