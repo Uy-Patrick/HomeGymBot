@@ -225,6 +225,9 @@ body {
 .workout-details {
   text-align: left;
   padding-left: 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 }
 
 @keyframes fade-in {
