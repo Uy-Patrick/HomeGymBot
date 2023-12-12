@@ -46,6 +46,11 @@ const beginnerUpperBodyWorkouts = [
     targetedMuscles: "Shoulders, Chest, Triceps, Back",
     workoutLink:
       "https://www.healthline.com/health/fitness/bodyweight-shoulder-exercises?fbclid=IwAR2yMt9dNfcpvQG--a-kBB_UbU4GE7YYMXRdot6-3VFIQzSTuWOvgXELNag",
+    howto: [
+      "Set up behind an elevated surface, like a bench or a couch. Place your hands about shoulder-width apart, and form a straight line with your body from head to heel.",
+      "Keeping your neck neutral, begin to lower your chest down while keeping your elbows at a 45-degree angle.",
+      "Lower down as far as you can go, then push back up to start.",
+    ],
   },
   {
     workoutName: "Push Up",
@@ -56,6 +61,7 @@ const beginnerUpperBodyWorkouts = [
     targetedMuscles: "Shoulders, Chest, Triceps, Biceps, Back, Abdominals",
     workoutLink:
       "https://www.verywellfit.com/the-push-up-exercise-3120574#toc-how-to-do-a-push-up",
+    howto: "",
   },
   {
     workoutName: "Knee Push Up",
@@ -66,6 +72,7 @@ const beginnerUpperBodyWorkouts = [
     targetedMuscles: "Shoulders, Chest, Triceps, Biceps, Back, Abdominals",
     workoutLink:
       "https://www.fitliferegime.com/best-push-ups-for-chest/#2-knee-push-up",
+    howto: "",
   },
   {
     workoutName: "Diamond Push Up On Knees",
@@ -75,6 +82,7 @@ const beginnerUpperBodyWorkouts = [
     intensityLevel: "Beginner",
     targetedMuscles: "Chest, Triceps",
     workoutLink: "https://www.youtube.com/watch?v=R6iSgwPqFNU",
+    howto: "",
   },
   {
     workoutName: "Plank",
@@ -85,6 +93,7 @@ const beginnerUpperBodyWorkouts = [
     targetedMuscles: "Shoulders, Chest, Triceps, Biceps, Back, Abdominals",
     workoutLink:
       "https://www.healthline.com/health/fitness/what-muscles-do-planks-work#how-to-do-it",
+    howto: "",
   },
   {
     workoutName: "Lying Knee Tucks",
@@ -94,6 +103,7 @@ const beginnerUpperBodyWorkouts = [
     intensityLevel: "Beginner",
     targetedMuscles: "Abdominals",
     workoutLink: "https://www.youtube.com/watch?v=V95h0UX8UyI",
+    howto: "",
   },
   {
     workoutName: "Straight Leg Raises",
@@ -103,6 +113,7 @@ const beginnerUpperBodyWorkouts = [
     intensityLevel: "Beginner",
     targetedMuscles: "Abdominals",
     workoutLink: "https://www.spotebi.com/exercise-guide/straight-leg-raise/",
+    howto: "",
   },
 ];
 
@@ -116,6 +127,11 @@ const intermediateUpperBodyWorkouts = [
     targetedMuscles: "Shoulders",
     workoutLink:
       "https://www.healthline.com/health/fitness/bodyweight-shoulder-exercises?fbclid=IwAR2yMt9dNfcpvQG--a-kBB_UbU4GE7YYMXRdot6-3VFIQzSTuWOvgXELNag",
+    howto: [
+      "Complete a plank to Downward Dog.",
+      "At the top of the movement, take your right hand and reach back to touch your left shin or foot, depending on your flexibility.",
+      "Return to start, then repeat with the opposite hand.",
+    ],
   },
   {
     workoutName: "Elbow to High Plank",
@@ -126,6 +142,12 @@ const intermediateUpperBodyWorkouts = [
     targetedMuscles: "Shoulders",
     workoutLink:
       "https://www.healthline.com/health/fitness/bodyweight-shoulder-exercises?fbclid=IwAR2yMt9dNfcpvQG--a-kBB_UbU4GE7YYMXRdot6-3VFIQzSTuWOvgXELNag",
+    howto: [
+      "Start in an elbow plank: Your forearms should be on the ground, elbow stacked under shoulders. Your body should form a straight line from head to heels.",
+      "Inhale and bring one palm to the ground, followed by the other, to push up into a high plank.",
+      "Hold a high plank for 1 second.",
+      "Return to a forearm plank.",
+    ],
   },
   {
     workoutName: "Spiderman Push Up",
@@ -135,6 +157,7 @@ const intermediateUpperBodyWorkouts = [
     intensityLevel: "Intermediate",
     targetedMuscles: "Shoulders, Chest, Triceps, Abdominals",
     workoutLink: "https://www.youtube.com/watch?v=fSoigipsZM8",
+    howto: "",
   },
   {
     workoutName: "Pseudo Planche Push Up",
@@ -144,6 +167,7 @@ const intermediateUpperBodyWorkouts = [
     intensityLevel: "Intermediate",
     targetedMuscles: "Shoulders, Chest, Triceps, Biceps, Abdominals",
     workoutLink: "https://www.youtube.com/watch?v=C-SML6xnVkI",
+    howto: "",
   },
   {
     workoutName: "Plank Ups",
@@ -154,6 +178,7 @@ const intermediateUpperBodyWorkouts = [
     targetedMuscles: "Shoulders, Triceps, Back, Abdominals",
     workoutLink:
       "https://www.masterclass.com/articles/plank-push-up-guide#WZyZXzWXpriAvsdONdXf4",
+    howto: "",
   },
   {
     workoutName: "Dive Bomber Push Up",
@@ -164,6 +189,7 @@ const intermediateUpperBodyWorkouts = [
     targetedMuscles: "Shoulders, Chest, Triceps",
     workoutLink:
       "https://gymperson.com/triceps-workout-without-weights/#Dive_Bomber_Pushup",
+    howto: "",
   },
   {
     workoutName: "Side Plank",
@@ -174,6 +200,7 @@ const intermediateUpperBodyWorkouts = [
     targetedMuscles: "Shoulders, Abdominals",
     workoutLink:
       "https://www.healthline.com/health/side-plank#basic-side-plank",
+    howto: "",
   },
   {
     workoutName: "Decline Plank",
@@ -183,6 +210,7 @@ const intermediateUpperBodyWorkouts = [
     intensityLevel: "Intermediate",
     targetedMuscles: "Shoulders, Abdominals",
     workoutLink: "https://www.youtube.com/watch?v=hCM8qYHen0Y",
+    howto: "",
   },
 ];
 
@@ -197,6 +225,11 @@ const advancedUpperBodyWorkouts = [
     targetedMuscles: "Shoulders, Chest, Triceps",
     workoutLink:
       "https://www.healthline.com/health/fitness/bodyweight-shoulder-exercises?fbclid=IwAR2yMt9dNfcpvQG--a-kBB_UbU4GE7YYMXRdot6-3VFIQzSTuWOvgXELNag",
+    howto: [
+      "Assume a Downward Dog position, then lift your head slightly so you’re looking at the ground instead of your feet.",
+      "Bend your elbows out to the side and begin to let your head lower toward the ground, dropping as far as you can.",
+      "Push back up to start.",
+    ],
   },
   {
     workoutName: "Side Plank with Leg Raises",
@@ -207,6 +240,13 @@ const advancedUpperBodyWorkouts = [
     targetedMuscles: "Shoulders, Abdominals",
     workoutLink:
       "https://www.healthline.com/health/fitness/bodyweight-shoulder-exercises?fbclid=IwAR2yMt9dNfcpvQG--a-kBB_UbU4GE7YYMXRdot6-3VFIQzSTuWOvgXELNag",
+    howto: [
+      "Lie on your side with your bottom arm bent and your forearm on the ground with your hand in front of your body.",
+      "Press into your forearm and lift your bottom hip off the ground to make a straight line from your foot to the crown of your head. Reach your other arm to the ceiling.",
+      "If you can hold this position while keeping your chest open to the side, try lifting your top leg.",
+      "Lower the leg and then lower the hips.",
+      "Repeat on the other side.",
+    ],
   },
   {
     workoutName: "Decline Push Up",
@@ -217,6 +257,7 @@ const advancedUpperBodyWorkouts = [
     targetedMuscles: "Shoulders, Chest, Triceps, Biceps, Abdominals",
     workoutLink:
       "https://www.verywellfit.com/decline-push-ups-3120037#toc-how-to-do-a-decline-push-up",
+    howto: "",
   },
   {
     workoutName: "Single Leg Push Up",
@@ -227,6 +268,7 @@ const advancedUpperBodyWorkouts = [
     targetedMuscles: "Shoulders, Chest, Triceps",
     workoutLink:
       "https://www.fitliferegime.com/best-push-ups-for-chest/#13-single-leg-push-up",
+    howto: "",
   },
   {
     workoutName: "One Arm Push Up",
@@ -237,6 +279,7 @@ const advancedUpperBodyWorkouts = [
     targetedMuscles: "Shoulders, Chest, Triceps, Biceps, Abdominals",
     workoutLink:
       "https://www.fitliferegime.com/best-push-ups-for-chest/#14-one-arm-push-up",
+    howto: "",
   },
   {
     workoutName: "L-Sit",
@@ -246,6 +289,7 @@ const advancedUpperBodyWorkouts = [
     targetedMuscles: "Shoulders, Triceps, Abdominals",
     workoutLink:
       "https://www.shape.com/fitness/tips/how-to-l-sit-exercise#toc-how-to-do-an-l-sit",
+    howto: "",
   },
   {
     workoutName: "Dips",
@@ -254,6 +298,7 @@ const advancedUpperBodyWorkouts = [
     intensityLevel: "Advanced",
     targetedMuscles: "Shoulders, Triceps",
     workoutLink: "https://www.youtube.com/watch?v=v4hLzeiK-6M",
+    howto: "",
   },
   {
     workoutName: "Narrow Push Up",
@@ -263,6 +308,7 @@ const advancedUpperBodyWorkouts = [
     intensityLevel: "Advanced",
     targetedMuscles: "Chest, Triceps",
     workoutLink: "https://www.youtube.com/watch?v=FtxezcfMahg",
+    howto: "",
   },
   {
     workoutName: "Dragon Flag Negatives",
@@ -272,6 +318,7 @@ const advancedUpperBodyWorkouts = [
     intensityLevel: "Advanced",
     targetedMuscles: "Abdominals",
     workoutLink: "https://www.youtube.com/watch?v=4422pnYNyng",
+    howto: "",
   },
 ];
 
@@ -288,6 +335,7 @@ const beginnerLowerBodyWorkouts = [
     targetedMuscles: "Glutes, Hamstrings",
     workoutLink:
       "https://www.verywellfit.com/how-to-do-the-bridge-exercise-3120738#toc-how-to-do-the-bridge-exercise",
+    howto: "",
   },
   {
     workoutName: "Supported Squat",
@@ -297,6 +345,7 @@ const beginnerLowerBodyWorkouts = [
     intensityLevel: "Beginner",
     targetedMuscles: "Glutes, Quadriceps, Hamstrings",
     workoutLink: "https://www.youtube.com/watch?v=O934_wamlGk",
+    howto: "",
   },
   {
     workoutName: "Jackknife Squat",
@@ -306,6 +355,7 @@ const beginnerLowerBodyWorkouts = [
     intensityLevel: "Beginner",
     targetedMuscles: "Glutes, Quadriceps, Hamstrings",
     workoutLink: "https://www.youtube.com/watch?app=desktop&v=WUj7b6kWAms",
+    howto: "",
   },
   {
     workoutName: "Standing Calf Raise",
@@ -316,6 +366,7 @@ const beginnerLowerBodyWorkouts = [
     targetedMuscles: "Calves",
     workoutLink:
       "https://www.verywellfit.com/how-to-do-calf-raises-4801090#toc-how-to-do-a-standing-calf-raise",
+    howto: "",
   },
   {
     workoutName: "Hip Thrusts",
@@ -326,6 +377,7 @@ const beginnerLowerBodyWorkouts = [
     targetedMuscles: "Glutes, Hamstrings",
     workoutLink:
       "https://greatist.com/move/bodyweight-butt-exercises?fbclid=IwAR1FQwKdXHV8_WEalZox4Td5y6YQeMiqUWVl7yyzX9Y5xuDTzlRA3_oKORo#beginner-moves",
+    howto: "",
   },
   {
     workoutName: "Crabwalk",
@@ -336,6 +388,7 @@ const beginnerLowerBodyWorkouts = [
     targetedMuscles: "Glutes, Hamstrings",
     workoutLink:
       "https://www.healthline.com/health/fitness/hamstring-exercises-bodyweight#beginner-exercises",
+    howto: "",
   },
 ];
 
@@ -350,6 +403,7 @@ const intermediateLowerBodyWorkouts = [
     targetedMuscles: "Glutes, Quadriceps, Hamstrings, Calves",
     workoutLink:
       "https://www.verywellfit.com/how-to-do-walking-lunges-4588048#toc-how-to-do-walking-lunges",
+    howto: "",
   },
   {
     workoutName: "Close Squat",
@@ -358,6 +412,7 @@ const intermediateLowerBodyWorkouts = [
     intensityLevel: "Intermediate",
     targetedMuscles: "Glutes, Quadriceps, Hamstrings, Calves",
     workoutLink: "https://www.youtube.com/watch?v=HTnH3QxN0D4",
+    howto: "",
   },
   {
     workoutName: "Box Jumps",
@@ -368,6 +423,7 @@ const intermediateLowerBodyWorkouts = [
     targetedMuscles: "Glutes, Quadriceps, Hamstrings, Calves",
     workoutLink:
       "https://www.healthline.com/health/fitness-exercise/box-jump#how-to",
+    howto: "",
   },
   {
     workoutName: "Jumping Lunges",
@@ -378,6 +434,7 @@ const intermediateLowerBodyWorkouts = [
     targetedMuscles: "Glutes, Quadriceps, Hamstrings, Calves",
     workoutLink:
       "https://www.healthline.com/health/jumping-lunges#how-to-do-it",
+    howto: "",
   },
   {
     workoutName: "Single Leg Hip Thrust",
@@ -388,6 +445,7 @@ const intermediateLowerBodyWorkouts = [
     targetedMuscles: "Glutes",
     workoutLink:
       "https://www.healthline.com/health/fitness/single-leg-hip-thrust#how-to-do-it",
+    howto: "",
   },
   {
     workoutName: "Elevated Hip Thrust",
@@ -398,6 +456,7 @@ const intermediateLowerBodyWorkouts = [
     targetedMuscles: "Glutes, Hamstrings",
     workoutLink:
       "(Hip Thrust Off Bench) https://www.healthline.com/health/fitness-exercise/hip-thrusts#variations-to-consider",
+    howto: "",
   },
 ];
 
@@ -412,6 +471,7 @@ const advancedLowerBodyWorkouts = [
     targetedMuscles: "Glutes, Quadriceps, Hamstrings, Calves",
     workoutLink:
       "https://www.healthline.com/health/exercise-fitness/single-leg-squat#how-to",
+    howto: "",
   },
   {
     workoutName: "One Leg Calf Raise",
@@ -422,6 +482,7 @@ const advancedLowerBodyWorkouts = [
     targetedMuscles: "Calves",
     workoutLink:
       "https://www.fittr.com/exercise-videos/standing-single-leg-calf-raise",
+    howto: "",
   },
   {
     workoutName: "Jump Squat",
@@ -431,6 +492,7 @@ const advancedLowerBodyWorkouts = [
     intensityLevel: "Advanced",
     targetedMuscles: "Glutes, Quadriceps, Hamstrings, Calves",
     workoutLink: "https://greatist.com/fitness/how-to-do-squat-jumps",
+    howto: "",
   },
   {
     workoutName: "Bulgarian Split Squat",
@@ -441,6 +503,7 @@ const advancedLowerBodyWorkouts = [
     targetedMuscles: "Glutes, Quadriceps, Hamstrings, Calves",
     workoutLink:
       "https://www.healthline.com/health/fitness-exercise/bulgarian-split-squat#how-to",
+    howto: "",
   },
   {
     workoutName: "One-Leg Box Jumps",
@@ -451,6 +514,7 @@ const advancedLowerBodyWorkouts = [
     targetedMuscles: "Glutes, Quadriceps, Hamstrings, Calves",
     workoutLink:
       "https://www.masterclass.com/articles/single-leg-box-jump-guide#72twdsSvFYvxV1Fhzssywf",
+    howto: "",
   },
 ];
 
@@ -797,12 +861,11 @@ const changeWorkoutsDisplayed = function () {
       if (cosSim > 0) {
         document.getElementById(`workout${index + 1}`).src = workoutPic;
         document.getElementById(`workout${index + 1}`).alt = workoutName;
-        document.getElementById(
-          `workout-name-details-${index + 1}`
-        ).textContent = workoutName;
+        document.getElementById(`workout-name-details-${index + 1}`).innerHTML =
+          "<b>" + workoutName + "</b>";
         document.getElementById(
           `workout-targets-details-${index + 1}`
-        ).textContent = "Targeted Muscles: " + targetedMuscles;
+        ).innerHTML = "Targeted Muscles: <b>" + targetedMuscles + "</b>";
 
         document
           .getElementById(`workout-container-container-${index + 1}`)
@@ -834,12 +897,11 @@ const changeWorkoutsDisplayed = function () {
       if (cosSim > 0) {
         document.getElementById(`workout${index + 1}`).src = workoutPic;
         document.getElementById(`workout${index + 1}`).alt = workoutName;
-        document.getElementById(
-          `workout-name-details-${index + 1}`
-        ).textContent = workoutName;
+        document.getElementById(`workout-name-details-${index + 1}`).innerHTML =
+          "<b>" + workoutName + "</b>";
         document.getElementById(
           `workout-targets-details-${index + 1}`
-        ).textContent = "Targeted Muscles: " + targetedMuscles;
+        ).innerHTML = "Targeted Muscles: <b>" + targetedMuscles + "</b>";
 
         document
           .getElementById(`workout-container-container-${index + 1}`)
@@ -870,12 +932,11 @@ const changeWorkoutsDisplayed = function () {
       if (cosSim > 0) {
         document.getElementById(`workout${index + 1}`).src = workoutPic;
         document.getElementById(`workout${index + 1}`).alt = workoutName;
-        document.getElementById(
-          `workout-name-details-${index + 1}`
-        ).textContent = workoutName;
+        document.getElementById(`workout-name-details-${index + 1}`).innerHTML =
+          "<b>" + workoutName + "</b>";
         document.getElementById(
           `workout-targets-details-${index + 1}`
-        ).textContent = "Targeted Muscles: " + targetedMuscles;
+        ).innerHTML = "Targeted Muscles: <b>" + targetedMuscles + "</b>";
 
         document
           .getElementById(`workout-container-container-${index + 1}`)
