@@ -61,7 +61,11 @@ const beginnerUpperBodyWorkouts = [
     targetedMuscles: "Shoulders, Chest, Triceps, Biceps, Back, Abdominals",
     workoutLink:
       "https://www.verywellfit.com/the-push-up-exercise-3120574#toc-how-to-do-a-push-up",
-    howto: "",
+    howto: [
+      "Contract your abs and tighten your core by pulling your belly button toward your spine.",
+      "Inhale as you slowly bend your elbows and lower yourself to the floor, until your elbows are at a 90-degree angle.",
+      "Exhale while contracting your chest muscles and pushing back up through your hands, returning to the start position.",
+    ],
   },
   {
     workoutName: "Knee Push Up",
@@ -72,7 +76,13 @@ const beginnerUpperBodyWorkouts = [
     targetedMuscles: "Shoulders, Chest, Triceps, Biceps, Back, Abdominals",
     workoutLink:
       "https://www.fitliferegime.com/best-push-ups-for-chest/#2-knee-push-up",
-    howto: "",
+    howto: [
+      "Kneel on the floor. Extend arms and put hands shoulder-width apart on the floor in front of you.",
+      "To lower yourself, bend your elbows and bring your chest to the floor.",
+      "Make sure your body is straight from your head to your knees.",
+      "Raise your body to the starting position by pushing up with your arms.",
+      "Repeat the desired number of repetitions.",
+    ],
   },
   {
     workoutName: "Diamond Push Up On Knees",
@@ -81,8 +91,13 @@ const beginnerUpperBodyWorkouts = [
       "https://images.squarespace-cdn.com/content/v1/5e24ef5fd5824c71389c778e/1606358807042-INSECD6IZD8L5VQJH2IN/diamond-pushups-knees.gif",
     intensityLevel: "Beginner",
     targetedMuscles: "Chest, Triceps",
-    workoutLink: "https://www.youtube.com/watch?v=R6iSgwPqFNU",
-    howto: "",
+    workoutLink:
+      "https://www.skimble.com/exercises/1044-kneeling-diamond-push-ups-how-to-do-exercise",
+    howto: [
+      "Get into a kneeling push up position with your shoulders directly above your wrists.",
+      "Place your hands close together so your thumbs and index fingers form a triangle on the floor.",
+      "Perform push-ups with your hands in this position.",
+    ],
   },
   {
     workoutName: "Plank",
@@ -93,7 +108,11 @@ const beginnerUpperBodyWorkouts = [
     targetedMuscles: "Shoulders, Chest, Triceps, Biceps, Back, Abdominals",
     workoutLink:
       "https://www.healthline.com/health/fitness/what-muscles-do-planks-work#how-to-do-it",
-    howto: "",
+    howto: [
+      "Start by lying on your stomach (prone position) with your elbows and forearms at your side. Ensure your elbows and shoulders are aligned.",
+      "Slowly lift your torso off the ground by pressing into your forearms and toes. Contract your core as you rise, maintain a neutral spine and neck (avoid hunching or looking up), and keep your pelvis tucked inward (shift your pelvis forward to prevent your butt from lifting).",
+      "Hold this position for as long as you can maintain proper form.",
+    ],
   },
   {
     workoutName: "Lying Knee Tucks",
@@ -102,8 +121,13 @@ const beginnerUpperBodyWorkouts = [
       "https://whitecoattrainer.com/wp-content/uploads/2020/09/abs-lying-bent-knee-raises-1024x1024.webp",
     intensityLevel: "Beginner",
     targetedMuscles: "Abdominals",
-    workoutLink: "https://www.youtube.com/watch?v=V95h0UX8UyI",
-    howto: "",
+    workoutLink:
+      "https://www.muscleandstrength.com/exercises/lying-floor-knee-raise.html",
+    howto: [
+      "Lay supine in a relaxed position with your legs straight and your hands underneath your low back for support.",
+      "Raise the knees toward your forehead while contracting your abdominals and exhaling.",
+      "Once your abs are fully contracted and your knees are slightly above parallel, slowly lower your legs back to the starting position.",
+    ],
   },
   {
     workoutName: "Straight Leg Raises",
@@ -113,7 +137,12 @@ const beginnerUpperBodyWorkouts = [
     intensityLevel: "Beginner",
     targetedMuscles: "Abdominals",
     workoutLink: "https://www.spotebi.com/exercise-guide/straight-leg-raise/",
-    howto: "",
+    howto: [
+      "Lie on your back with your hands by your sides or underneath your glutes. Keep your legs straight or just slightly bent.",
+      "Raise your legs until your body is in an L shape.",
+      "Pause, lower both legs slowly and then return to the starting position.",
+      "Repeat until set is complete.",
+    ],
   },
 ];
 
@@ -156,8 +185,14 @@ const intermediateUpperBodyWorkouts = [
       "https://i.pinimg.com/originals/0b/17/27/0b17273cd162eebe9b484c9eab632ff9.gif",
     intensityLevel: "Intermediate",
     targetedMuscles: "Shoulders, Chest, Triceps, Abdominals",
-    workoutLink: "https://www.youtube.com/watch?v=fSoigipsZM8",
-    howto: "",
+    workoutLink:
+      "https://www.menshealth.com/fitness/a20694607/spiderman-pushup/",
+    howto: [
+      "Start in pushup position, abs and glutes tight.",
+      "Lower into a pushup, bringing your chest an inch from the ground.",
+      "Pause in this position. Keeping your chest parallel to the ground, lift your right foot off the ground and drive right knee to touch your right elbow.",
+      "Drive back up as you return your right leg to standard pushup position.",
+    ],
   },
   {
     workoutName: "Pseudo Planche Push Up",
@@ -167,7 +202,11 @@ const intermediateUpperBodyWorkouts = [
     intensityLevel: "Intermediate",
     targetedMuscles: "Shoulders, Chest, Triceps, Biceps, Abdominals",
     workoutLink: "https://www.youtube.com/watch?v=C-SML6xnVkI",
-    howto: "",
+    howto: [
+      "Start in a straight-arm plank position, Rotate your hands to a 45-degree angle and lean forward so that your hands are underneath your hips.",
+      "Keep your feet on the ground, pointing your toes so that you rest on the tops of your feet.",
+      "Push your chest upward, then bend your elbows and lower your body to the floor.",
+    ],
   },
   {
     workoutName: "Plank Ups",
@@ -178,7 +217,15 @@ const intermediateUpperBodyWorkouts = [
     targetedMuscles: "Shoulders, Triceps, Back, Abdominals",
     workoutLink:
       "https://www.masterclass.com/articles/plank-push-up-guide#WZyZXzWXpriAvsdONdXf4",
-    howto: "",
+    howto: [
+      "Get into a modified plank position by placing your forearms in contact with the floor. Your hips should be off the ground with your knees and toes in contact with the ground. Your elbows should be directly underneath your shoulders.",
+      "Rotate your shoulders outward to engage your lats and pull your forearms toward your midsection to create tension. Squeeze your glutes and quads.",
+      "Engage your core. Your ribs should be down and your pelvis should be slightly tucked. Your chin should remain tucked throughout the movement, as if you were holding an egg under your chin.",
+      "Straighten your legs to lift your knees off of the ground so you end up in a full plank position. Your legs should be hip-width apart. All repetitions should begin from this starting position.",
+      "While keeping your core engaged and maintaining full-body tension, slowly straighten one arm at a time to move into a push-up position.",
+      "Slowly bend your arms one at a time, placing your forearms back on the floor to return to the plank position.",
+      "Continue to alternate between the plank and push-up position for the desired number of repetitions.",
+    ],
   },
   {
     workoutName: "Dive Bomber Push Up",
@@ -189,7 +236,12 @@ const intermediateUpperBodyWorkouts = [
     targetedMuscles: "Shoulders, Chest, Triceps",
     workoutLink:
       "https://gymperson.com/triceps-workout-without-weights/#Dive_Bomber_Pushup",
-    howto: "",
+    howto: [
+      "Start with your toes and palms on the ground. Your body should be in the shape of an inverted V with your arms and legs extended and your hips raised.",
+      "The idea is to move your torso in a U-shape leading with your head. To do this, you need to keep your hips up while bending your elbows slowly to bring your chest down. That's the first half of the U.",
+      "Continue the U-shape by straightening your arms to push your chest up and forward while bringing your hips down. Try to draw a smooth half circle in the air with your body.",
+      "Reverse the half circle as smoothly as possible until you're back in the original inverted-V position.",
+    ],
   },
   {
     workoutName: "Side Plank",
@@ -200,7 +252,12 @@ const intermediateUpperBodyWorkouts = [
     targetedMuscles: "Shoulders, Abdominals",
     workoutLink:
       "https://www.healthline.com/health/side-plank#basic-side-plank",
-    howto: "",
+    howto: [
+      "Lie on your right side with your legs straight and feet stacked on top of each other. Place your right elbow under your right shoulder with your forearm pointing away from you and your hand balled into a fist. The pinky side of your hand should be in contact with the ground.",
+      "With your neck neutral, breathe out and brace your core.",
+      "Lift your hips off the mat so that you're supporting your weight on your elbow and the side of your right foot. Your body should be in a straight line from your ankles to your head.",
+      "Repeat on your left side.",
+    ],
   },
   {
     workoutName: "Decline Plank",
@@ -210,7 +267,12 @@ const intermediateUpperBodyWorkouts = [
     intensityLevel: "Intermediate",
     targetedMuscles: "Shoulders, Abdominals",
     workoutLink: "https://www.youtube.com/watch?v=hCM8qYHen0Y",
-    howto: "",
+    howto: [
+      "Place a chair, box, or flat bench behind you.",
+      "Now place your feet up on the chair so that only your toes are touching it and your forearms on the ground.",
+      "Make your body into a straight line (plank position).",
+      "Keeping your core tight the whole time hold this position for the desired amount of time.",
+    ],
   },
 ];
 
@@ -226,7 +288,7 @@ const advancedUpperBodyWorkouts = [
     workoutLink:
       "https://www.healthline.com/health/fitness/bodyweight-shoulder-exercises?fbclid=IwAR2yMt9dNfcpvQG--a-kBB_UbU4GE7YYMXRdot6-3VFIQzSTuWOvgXELNag",
     howto: [
-      "Assume a Downward Dog position, then lift your head slightly so you’re looking at the ground instead of your feet.",
+      "Assume a Downward Dog position, then lift your head slightly so you're looking at the ground instead of your feet.",
       "Bend your elbows out to the side and begin to let your head lower toward the ground, dropping as far as you can.",
       "Push back up to start.",
     ],
@@ -257,7 +319,10 @@ const advancedUpperBodyWorkouts = [
     targetedMuscles: "Shoulders, Chest, Triceps, Biceps, Abdominals",
     workoutLink:
       "https://www.verywellfit.com/decline-push-ups-3120037#toc-how-to-do-a-decline-push-up",
-    howto: "",
+    howto: [
+      "Bend your elbows to lower your chest until it almost touches the floor, stopping once your elbows are at your ribcage. Maintain an aligned position and use a smooth, controlled motion. As you lower to the ground, look up slightly to allow full range of motion and avoid banging your nose or forehead on the ground. This position may make you want to arch your back but resist this temptation as doing so is not helpful and could set you up for an injury.",
+      "Push up until your elbows are straight, but not locked, to return to the starting position.",
+    ],
   },
   {
     workoutName: "Single Leg Push Up",
@@ -268,7 +333,13 @@ const advancedUpperBodyWorkouts = [
     targetedMuscles: "Shoulders, Chest, Triceps",
     workoutLink:
       "https://www.fitliferegime.com/best-push-ups-for-chest/#13-single-leg-push-up",
-    howto: "",
+    howto: [
+      "Assume a standard push-up position, but place one foot on top of the other or one place one foot in the air straight behind you.",
+      "Lower yourself by bending your elbows. Make sure your chest is close to the floor and your body is straight from head to toe. Lift one leg up in the air.",
+      "Raise your body to the starting position by pushing up with your arms.",
+      "Repeat the desired number of repetitions.",
+      "Make sure to alternate legs in between sets or repetitions to create a symmetrical body.",
+    ],
   },
   {
     workoutName: "One Arm Push Up",
@@ -279,7 +350,13 @@ const advancedUpperBodyWorkouts = [
     targetedMuscles: "Shoulders, Chest, Triceps, Biceps, Abdominals",
     workoutLink:
       "https://www.fitliferegime.com/best-push-ups-for-chest/#14-one-arm-push-up",
-    howto: "",
+    howto: [
+      "Get in the standard push-up position. Place one hand on the ground directly beneath your chest and the other behind your lower back.",
+      "To maintain balance, turn your torso slightly away from the pushing arm.",
+      "Breathe in as you lower your angled torso to the ground until your chin is a few inches above the floor.",
+      "Breathe out as you push yourself up from the floor.",
+      "Stop just before you lock out your elbow at the top of the movement.",
+    ],
   },
   {
     workoutName: "L-Sit",
@@ -289,7 +366,12 @@ const advancedUpperBodyWorkouts = [
     targetedMuscles: "Shoulders, Triceps, Abdominals",
     workoutLink:
       "https://www.shape.com/fitness/tips/how-to-l-sit-exercise#toc-how-to-do-an-l-sit",
-    howto: "",
+    howto: [
+      "If using two boxes, benches, or parallettes, set them up so that they are a little narrower than shoulder-width apart. Stand between them and place palms on each side, under shoulders.",
+      "Straighten arms, lock elbows at sides, pull shoulder blades down and away from ears, and engage lats.",
+      "Then, pushing down into palms, engage core and lift legs (straight and together) off the floor until parallel with (or close to parallel with) the floor.",
+      "Hold, keeping knees straight, squeezing quads together tightly, pointing toes, and looking straight ahead to maintain neutral neck.",
+    ],
   },
   {
     workoutName: "Dips",
@@ -298,7 +380,13 @@ const advancedUpperBodyWorkouts = [
     intensityLevel: "Advanced",
     targetedMuscles: "Shoulders, Triceps",
     workoutLink: "https://www.youtube.com/watch?v=v4hLzeiK-6M",
-    howto: "",
+    howto: [
+      "Position your hands shoulder-width apart on a weight bench, wall or chair.",
+      "With your palms on the bench and knuckles pointed towards your feet, extend your legs in front of you.",
+      "Push upwards to the starting position, then slowly lower your body until your elbows are at right angles.",
+      "Keep your elbows as close to your body as possible and maintaining tension, hold for a second at the bottom of the movement.",
+      "Press down into the bench to straighten your elbows and return to the starting position.",
+    ],
   },
   {
     workoutName: "Narrow Push Up",
@@ -308,7 +396,10 @@ const advancedUpperBodyWorkouts = [
     intensityLevel: "Advanced",
     targetedMuscles: "Chest, Triceps",
     workoutLink: "https://www.youtube.com/watch?v=FtxezcfMahg",
-    howto: "",
+    howto: [
+      "Lie facedown on the floor with your hands flat on the floor inside shoulder widths; a narrower grip involves your triceps more. Keep your legs straight and press your toes into the floor. Hold your body straight, pull your abs in tight and focus your eyes on the floor.",
+      "Powerfully press through your hands to raise your body off the floor. At the top, squeeze your chest, shoulders and triceps hard for a count before slowly lowering back to the start. Don't allow your body to rest on the floor; instead, when you're an inch or so away from the floor, pause and repeat.",
+    ],
   },
   {
     workoutName: "Dragon Flag Negatives",
@@ -318,7 +409,17 @@ const advancedUpperBodyWorkouts = [
     intensityLevel: "Advanced",
     targetedMuscles: "Abdominals",
     workoutLink: "https://www.youtube.com/watch?v=4422pnYNyng",
-    howto: "",
+    howto: [
+      "Lie faceup on a bench or the floor.",
+      "Reach your arms behind your head.",
+      "Grab a bench, column, or pole to help you brace yourself.",
+      "Activate your entire torso as you lift your hips and shift your weight to your shoulders.",
+      "Drive your legs up, similar to the movement you’d use to do a reverse crunch, until they’re almost vertical.",
+      "Keep your core tight and body straight, and try not to bend at your hips.",
+      "Slowly lower your legs to create a straight line from shoulders to hips and toes.",
+      "Balance your body weight on your shoulders as you hold the position.",
+      "Release and repeat.",
+    ],
   },
 ];
 
