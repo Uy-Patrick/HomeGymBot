@@ -11,6 +11,7 @@ const intensityLevelInfo = document.getElementById("intensity-level-info");
 const workoutNameInfo = document.getElementById("workout-name-info");
 const targetedMusclesInfo = document.getElementById("targeted-muscles-info");
 const workoutLinkInfo = document.getElementById("workout-link-info");
+const workoutHowToInfo = document.getElementById("workout-howto-info");
 
 const checkbox1 = document.getElementById("muscle1");
 const checkbox2 = document.getElementById("muscle2");
@@ -435,8 +436,14 @@ const beginnerLowerBodyWorkouts = [
     intensityLevel: "Beginner",
     targetedMuscles: "Glutes, Hamstrings",
     workoutLink:
-      "https://www.verywellfit.com/how-to-do-the-bridge-exercise-3120738#toc-how-to-do-the-bridge-exercise",
-    howto: "",
+      "https://www.webmd.com/fitness-exercise/how-to-do-glute-bridge",
+    howto: [
+      "Lie on your back and set your knees about shoulder-width apart, with your feet flat to the ground and your knees bent. Make sure your toes are pointed straight forward and that your heels are 6–8 inches from your glutes. Lay your arms flat on either side of you with your palms open toward the ceiling.",
+      "Slowly raise your hips, engage your glutes, and squeeze your abs.",
+      "Be careful not to arch your back as you lift your hips as high as possible. A perfect glute bridge consists of elevating your hips until your torso makes a straight line from your shoulder up to your knee.",
+      "Once you reach the top of the glute bridge, squeeze your glutes as tightly as possible and hold for a few seconds.",
+      "Lower your hips back down to the ground in a controlled motion without releasing the tension in your abs and glutes.",
+    ],
   },
   {
     workoutName: "Supported Squat",
@@ -445,8 +452,14 @@ const beginnerLowerBodyWorkouts = [
       "https://www.adlsmartcare.co.uk/adlsmartcare/Upload/products/Squat_M.gif",
     intensityLevel: "Beginner",
     targetedMuscles: "Glutes, Quadriceps, Hamstrings",
-    workoutLink: "https://www.youtube.com/watch?v=O934_wamlGk",
-    howto: "",
+    workoutLink:
+      "https://www.makinglifeeasier.org.uk/assess/areas-of-help/area/Garden/2c6540c3-cebd-44a3-904f-adf5ca98679e/groups/a188c846-e689-43b2-95c4-1d9a3674b9ef/view/supported-squat#:~:text=Stand%20with%20your%20feet%20hip,up%20to%20the%20start%20position.",
+    howto: [
+      "Stand with your feet hip-width apart and hold a fixed surface such as a kitchen worktop.",
+      "Bend your knees and push your bottom backwards, as though you were going to sit down.",
+      "Try to keep your knees above your toes.",
+      "Come back up to the start position.",
+    ],
   },
   {
     workoutName: "Jackknife Squat",
@@ -456,7 +469,14 @@ const beginnerLowerBodyWorkouts = [
     intensityLevel: "Beginner",
     targetedMuscles: "Glutes, Quadriceps, Hamstrings",
     workoutLink: "https://www.youtube.com/watch?app=desktop&v=WUj7b6kWAms",
-    howto: "",
+    howto: [
+      "Stand in front of a stable platform around knee height.",
+      "Maintaining straight legs, bend at the hips until your palms are on the platform. Your arms should be relatively straight, as should your waist.",
+      "Squat down slowly, with a slightly forward lean so you may assist with your arms, until your hamstrings are pressed against your calves. You should not be able to squat any further.",
+      "Pause for 1 Second.",
+      "Slowly come back up.",
+      "Pause for 1 Second.",
+    ],
   },
   {
     workoutName: "Standing Calf Raise",
@@ -467,7 +487,11 @@ const beginnerLowerBodyWorkouts = [
     targetedMuscles: "Calves",
     workoutLink:
       "https://www.verywellfit.com/how-to-do-calf-raises-4801090#toc-how-to-do-a-standing-calf-raise",
-    howto: "",
+    howto: [
+      "Raise your heels slowly, keeping your knees extended (but not locked).",
+      "Pause for one second when you're standing as much on the tips of your toes as you can.",
+      "Lower your heels back to the ground, returning to the starting position. ",
+    ],
   },
   {
     workoutName: "Hip Thrusts",
@@ -478,7 +502,13 @@ const beginnerLowerBodyWorkouts = [
     targetedMuscles: "Glutes, Hamstrings",
     workoutLink:
       "https://greatist.com/move/bodyweight-butt-exercises?fbclid=IwAR1FQwKdXHV8_WEalZox4Td5y6YQeMiqUWVl7yyzX9Y5xuDTzlRA3_oKORo#beginner-moves",
-    howto: "",
+    howto: [
+      "Start seated on the floor with your knees bent and feet hip-width apart.",
+      "Place your hands on the floor directly underneath your shoulders with your fingers facing away from your body.",
+      "Squeeze your glutes and lift your hips into a tabletop position. Keep your neck long and don’t scrunch your shoulders.",
+      "Hold for a count of 5.",
+      "Slowly lower your hips to the floor.",
+    ],
   },
   {
     workoutName: "Crabwalk",
@@ -489,7 +519,12 @@ const beginnerLowerBodyWorkouts = [
     targetedMuscles: "Glutes, Hamstrings",
     workoutLink:
       "https://www.healthline.com/health/fitness/hamstring-exercises-bodyweight#beginner-exercises",
-    howto: "",
+    howto: [
+      "Sit on the floor with your knees bent and feet flat.",
+      "Extend your arms behind you and place your hands on the floor with your fingers pointed toward you.",
+      "Engage your core and lift your hips off the floor.",
+      "Step forward simultaneously with your left foot and right hand. Next, step forward with your right foot and left hand. Continue this movement as far as you can in the space you’re in. Then, try going backward.",
+    ],
   },
 ];
 
@@ -504,7 +539,17 @@ const intermediateLowerBodyWorkouts = [
     targetedMuscles: "Glutes, Quadriceps, Hamstrings, Calves",
     workoutLink:
       "https://www.verywellfit.com/how-to-do-walking-lunges-4588048#toc-how-to-do-walking-lunges",
-    howto: "",
+    howto: [
+      "Stand with your feet roughly hip-distance apart.",
+      "Check your posture before starting—your torso should be upright and tall, core engaged, your shoulders back and chin lifted.",
+      "Look straight ahead.",
+      "Take a wide step forward with your right foot—plant it roughly two feet ahead, allowing your left heel to lift naturally as you step forward. You may want to put your hands on your hips, or you may want to swing your arms naturally—elbows bent at 90-degrees—as you take each step.",
+      "Keep your core engaged and upright.",
+      "Bend both knees and lower your back knee toward the floor. Stop just before it touches down. Breathe in during the lowering (or eccentric) phase of the exercise.",
+      "Press firmly through your right heel and extend your right knee to rise to stand as you lift your left foot from the ground, swinging your left foot forward to plant it about two feet ahead of your right foot. Avoid leaning your torso forward from your hips as you take this step. Breathe out as you rise to stand (the concentric phase of the exercise).",
+      "Continue stepping forward with each lunge, alternating sides as you do. If you find yourself losing balance as you walk, pause at the top of each lunge when your feet are next to each other. Gather your balance, then continue.",
+      "Finish your set by bringing your back foot to meet your front foot on the final lunge.",
+    ],
   },
   {
     workoutName: "Close Squat",
@@ -513,7 +558,11 @@ const intermediateLowerBodyWorkouts = [
     intensityLevel: "Intermediate",
     targetedMuscles: "Glutes, Quadriceps, Hamstrings, Calves",
     workoutLink: "https://www.youtube.com/watch?v=HTnH3QxN0D4",
-    howto: "",
+    howto: [
+      "Stand with your feet hip-width or closerm pull your shoulders down and back, and look straight ahead.",
+      "Keeping your torso relatively upright, bend your knees, and squat down as far as you can without rounding your lower back or lifting your heels off the floor.",
+      "Without bouncing at the bottom, stand back up and repeat.",
+    ],
   },
   {
     workoutName: "Box Jumps",
@@ -524,7 +573,12 @@ const intermediateLowerBodyWorkouts = [
     targetedMuscles: "Glutes, Quadriceps, Hamstrings, Calves",
     workoutLink:
       "https://www.healthline.com/health/fitness-exercise/box-jump#how-to",
-    howto: "",
+    howto: [
+      "Stand with the box one short step in front of you and your feet shoulder-width apart.",
+      "Bend your knees slightly and drop down, bringing your arms out behind you.",
+      "Use the momentum from your quarter squat to propel you upward as you jump onto the box, allowing your arms to swing out in front of you.",
+      "Land softly on both feet with a slight bend in the knees.",
+    ],
   },
   {
     workoutName: "Jumping Lunges",
@@ -533,9 +587,13 @@ const intermediateLowerBodyWorkouts = [
       "https://media.self.com/photos/57d883bef71ce8751f6b46a8/master/w_1600%2Cc_limit/Jumping_Lunge.gif",
     intensityLevel: "Intermediate",
     targetedMuscles: "Glutes, Quadriceps, Hamstrings, Calves",
-    workoutLink:
-      "https://www.healthline.com/health/jumping-lunges#how-to-do-it",
-    howto: "",
+    workoutLink: "https://www.spotebi.com/exercise-guide/jumping-lunges/",
+    howto: [
+      "Take a large step backward and lower your hips, so that your back knee is just above the floor, and your front thigh is parallel to the floor.",
+      "Jump into the air and switch leg positions.",
+      "Jump again and return to the starting position.",
+      "Repeat the exercise until set is complete.",
+    ],
   },
   {
     workoutName: "Single Leg Hip Thrust",
@@ -546,7 +604,13 @@ const intermediateLowerBodyWorkouts = [
     targetedMuscles: "Glutes",
     workoutLink:
       "https://www.healthline.com/health/fitness/single-leg-hip-thrust#how-to-do-it",
-    howto: "",
+    howto: [
+      "Start by placing your upper back against a bench with one knee bent at about 90 degrees and the foot of the same leg flat on the floor — this will be your working leg.",
+      "Lift your other leg, bending your knee until both your hip and knee form a 90-degree angle.",
+      "Lay your arms out flat on the bench, or bend your elbows to rest your head in your hands. Focus on using your upper back as a pivot point as opposed to using your elbows to create force and drive the movement.",
+      "Contract the glute of the working leg and lift your hips until they’re in line with your torso.",
+      "Briefly hold this position while continuing to squeeze your glute, and finally, return to the starting position.",
+    ],
   },
   {
     workoutName: "Elevated Hip Thrust",
@@ -556,8 +620,11 @@ const intermediateLowerBodyWorkouts = [
     intensityLevel: "Intermediate",
     targetedMuscles: "Glutes, Hamstrings",
     workoutLink:
-      "(Hip Thrust Off Bench) https://www.healthline.com/health/fitness-exercise/hip-thrusts#variations-to-consider",
-    howto: "",
+      "https://www.menshealth.com/fitness/a20695016/elevated-hip-thrust/",
+    howto: [
+      "Lie faceup on the floor with your knees bent and your feet on a bench or box.",
+      "Raise your hips until your body forms a straight line from your shoulders to your knees, then slowly lower to the starting position. ",
+    ],
   },
 ];
 
@@ -572,7 +639,11 @@ const advancedLowerBodyWorkouts = [
     targetedMuscles: "Glutes, Quadriceps, Hamstrings, Calves",
     workoutLink:
       "https://www.healthline.com/health/exercise-fitness/single-leg-squat#how-to",
-    howto: "",
+    howto: [
+      "Start by standing on your right foot. Lift your left leg out and hold it out straight and slightly in front of your torso. You could also just bend your knee and keep your left leg elevated to start. Your arms can be by your side or out in front of you for balance.",
+      "Keep your core engaged and your torso up throughout the movement. Start to push your hips back as you lower into a squat position. Aim to get low enough that your hips are parallel to the ground.",
+      "Squeeze your glutes as you push into the right foot to stand back up. Try to keep your left leg up between reps.",
+    ],
   },
   {
     workoutName: "One Leg Calf Raise",
@@ -583,7 +654,13 @@ const advancedLowerBodyWorkouts = [
     targetedMuscles: "Calves",
     workoutLink:
       "https://www.fittr.com/exercise-videos/standing-single-leg-calf-raise",
-    howto: "",
+    howto: [
+      "While standing on your toe, slowly raise your heel and pause at the top for a second",
+      "Make sure to keep the knee straight at all times",
+      "Now lower your heel and stretch at the bottom",
+      "Return to the starting position",
+      "Repeat with the other leg.",
+    ],
   },
   {
     workoutName: "Jump Squat",
@@ -593,7 +670,13 @@ const advancedLowerBodyWorkouts = [
     intensityLevel: "Advanced",
     targetedMuscles: "Glutes, Quadriceps, Hamstrings, Calves",
     workoutLink: "https://greatist.com/fitness/how-to-do-squat-jumps",
-    howto: "",
+    howto: [
+      "Stand up straight, with feet slightly wider than shoulder-width apart.",
+      "Squat until your thighs are just a bit higher than your knees.",
+      "Drive through the balls of your feet to push yourself upward, straightening legs. (Try to get your feet to lift off the floor.)",
+      "Land on the balls of your feet with soft, bent knees.",
+      "Return to classic squat position.",
+    ],
   },
   {
     workoutName: "Bulgarian Split Squat",
@@ -604,7 +687,13 @@ const advancedLowerBodyWorkouts = [
     targetedMuscles: "Glutes, Quadriceps, Hamstrings, Calves",
     workoutLink:
       "https://www.healthline.com/health/fitness-exercise/bulgarian-split-squat#how-to",
-    howto: "",
+    howto: [
+      "Start by standing about 2 feet in front of a knee-level bench or step.",
+      "Lift your right leg up behind you and place the top of your foot on the bench. Your feet should still be about shoulder-width apart, and your right foot should be far enough in front of the bench where you can comfortably lunge — hop around a bit so you can find the right spot. If a closer foot position works, just ensure that when you lower down, your left knee doesn’t fall over the line of your toes.",
+      "While engaging your core, roll your shoulders back and lean slightly forward at the waist, beginning to lower down on your left leg, bending the knee.",
+      "If completing a quad-dominant Bulgarian split squat, stop before your knee falls over your toes. If completing a glute-dominant Bulgarian split squat, stop when your left thigh is parallel to the ground.",
+      "Push up through your left foot, using the power from your quads and hamstrings to return to standing.",
+    ],
   },
   {
     workoutName: "One-Leg Box Jumps",
@@ -615,7 +704,11 @@ const advancedLowerBodyWorkouts = [
     targetedMuscles: "Glutes, Quadriceps, Hamstrings, Calves",
     workoutLink:
       "https://www.masterclass.com/articles/single-leg-box-jump-guide#72twdsSvFYvxV1Fhzssywf",
-    howto: "",
+    howto: [
+      "Begin by standing around one foot length back from the box (one foot being the size of your foot!).",
+      "Balance on to one leg, squat down and use your arms to jump up on to the box using one leg.",
+      "Land as still as you can, hold the position for a second or two before standing tall and carefully stepping off the box.",
+    ],
   },
 ];
 
@@ -626,7 +719,6 @@ checkbox1.addEventListener("click", function () {
   } else {
     upperBodyTargetMuscles[0] = 0;
   }
-  console.log(upperBodyTargetMuscles);
 });
 
 checkbox2.addEventListener("click", function () {
@@ -635,7 +727,6 @@ checkbox2.addEventListener("click", function () {
   } else {
     upperBodyTargetMuscles[1] = 0;
   }
-  console.log(upperBodyTargetMuscles);
 });
 
 checkbox3.addEventListener("click", function () {
@@ -644,7 +735,6 @@ checkbox3.addEventListener("click", function () {
   } else {
     upperBodyTargetMuscles[2] = 0;
   }
-  console.log(upperBodyTargetMuscles);
 });
 
 checkbox4.addEventListener("click", function () {
@@ -653,7 +743,6 @@ checkbox4.addEventListener("click", function () {
   } else {
     upperBodyTargetMuscles[3] = 0;
   }
-  console.log(upperBodyTargetMuscles);
 });
 
 checkbox5.addEventListener("click", function () {
@@ -662,7 +751,6 @@ checkbox5.addEventListener("click", function () {
   } else {
     upperBodyTargetMuscles[4] = 0;
   }
-  console.log(upperBodyTargetMuscles);
 });
 
 checkbox6.addEventListener("click", function () {
@@ -671,7 +759,6 @@ checkbox6.addEventListener("click", function () {
   } else {
     upperBodyTargetMuscles[5] = 0;
   }
-  console.log(upperBodyTargetMuscles);
 });
 
 checkbox7.addEventListener("click", function () {
@@ -680,7 +767,6 @@ checkbox7.addEventListener("click", function () {
   } else {
     lowerBodyTargetMuscles[0] = 0;
   }
-  console.log(lowerBodyTargetMuscles);
 });
 
 checkbox8.addEventListener("click", function () {
@@ -689,7 +775,6 @@ checkbox8.addEventListener("click", function () {
   } else {
     lowerBodyTargetMuscles[1] = 0;
   }
-  console.log(lowerBodyTargetMuscles);
 });
 
 checkbox9.addEventListener("click", function () {
@@ -698,7 +783,6 @@ checkbox9.addEventListener("click", function () {
   } else {
     lowerBodyTargetMuscles[2] = 0;
   }
-  console.log(lowerBodyTargetMuscles);
 });
 
 checkbox10.addEventListener("click", function () {
@@ -707,7 +791,6 @@ checkbox10.addEventListener("click", function () {
   } else {
     lowerBodyTargetMuscles[3] = 0;
   }
-  console.log(lowerBodyTargetMuscles);
 });
 
 let upperBodyWorkoutOutputs = [];
@@ -785,7 +868,7 @@ const getCosineSimilarityUpper = function (userTargetMuscles, arr) {
   upperBodyWorkoutValues.sort((a, b) => {
     return b[7] - a[7];
   });
-  console.log("After sort:", upperBodyWorkoutValues);
+
   return upperBodyWorkoutValues;
 };
 
@@ -799,13 +882,11 @@ const getCosineSimilarityLower = function (userTargetMuscles, arr) {
       calcCosineSimilarity(userTargetMuscles, workout[1]),
     ]);
     // sample output : [workout name, value, workout pic, intensity level, target muscles, how to, value]
-    console.log(lowerBodyWorkoutValues);
   }
 
   lowerBodyWorkoutValues.sort((a, b) => {
     return b[7] - a[7];
   });
-  console.log("After sort:", lowerBodyWorkoutValues);
   return lowerBodyWorkoutValues;
 };
 
@@ -846,20 +927,14 @@ const generate = function () {
       lowerBodyTargetMuscles.includes(1)
     ) {
       if (radio1.checked) {
-        console.log("Intensity level: Beginner");
         getBeginnerWorkouts();
       } else if (radio2.checked) {
-        console.log("Intensity level: Intermediate");
         getIntermediateWorkouts();
       } else if (radio3.checked) {
-        console.log("Intensity level: Advanced");
         getAdvancedWorkouts();
       }
       changeWorkoutsDisplayed();
     }
-    console.log("*** generate() reached");
-    console.log("------------------------------");
-    console.log(workoutOutputs);
   }, 100);
 };
 
@@ -877,7 +952,6 @@ const getBeginnerWorkouts = function () {
   ) {
     // no lower muscles have been selected
     getUpperWorkouts(beginnerUpperBodyWorkoutsArr);
-    // console.log(getUpperWorkouts(beginnerUpperBodyWorkoutsArr));
   } else if (
     !upperBodyTargetMuscles.includes(1) &&
     lowerBodyTargetMuscles.includes(1)
@@ -885,7 +959,6 @@ const getBeginnerWorkouts = function () {
     // no upper muscles have been selected
     getLowerWorkouts(beginnerLowerBodyWorkoutsArr);
   }
-  console.log("*** getBeginnerWorkouts() reached");
 };
 
 const getIntermediateWorkouts = function () {
@@ -909,7 +982,6 @@ const getIntermediateWorkouts = function () {
     // no upper muscles have been selected
     getLowerWorkouts(intermediateLowerBodyWorkoutsArr);
   }
-  console.log("*** getIntermediateWorkouts() reached");
 };
 
 const getAdvancedWorkouts = function () {
@@ -933,7 +1005,6 @@ const getAdvancedWorkouts = function () {
     // no upper muscles have been selected
     getLowerWorkouts(advancedLowerBodyWorkoutsArr);
   }
-  console.log("*** getAdvancedWorkouts() reached");
 };
 
 const changeWorkoutsDisplayed = function () {
@@ -978,7 +1049,6 @@ const changeWorkoutsDisplayed = function () {
         document.getElementById("upper").innerHTML = "<b><u>UPPER BODY</b></u>";
       }
     }
-    console.log("3 upper and 3 for lower");
   } else if (
     upperBodyTargetMuscles.includes(1) &&
     !lowerBodyTargetMuscles.includes(1)
@@ -1015,7 +1085,6 @@ const changeWorkoutsDisplayed = function () {
         document.getElementById("upper").classList.remove("hidden");
       }
     }
-    console.log("5 for upper");
   } else if (
     !upperBodyTargetMuscles.includes(1) &&
     lowerBodyTargetMuscles.includes(1)
@@ -1051,16 +1120,12 @@ const changeWorkoutsDisplayed = function () {
         document.getElementById("upper").innerHTML = "<b><u>LOWER BODY</b></u>";
       }
     }
-    console.log("5 for lower");
   } else if (
     !upperBodyTargetMuscles.includes(1) &&
     !lowerBodyTargetMuscles.includes(1)
   ) {
     // no muscles have been selected
-    console.log("no output");
   }
-
-  console.log("*** changeWorkoutDisplayed() reached");
 };
 
 const openWorkoutInfo = function (num) {
@@ -1086,10 +1151,17 @@ const closeWorkoutInfo = function () {
 const displayWorkoutInfo = function (num) {
   workoutInfoPic.src = workoutOutputs[num][2];
   workoutInfoPic.alt = workoutOutputs[num][0];
+
+  let workoutHowTo = ``;
+  for (let i = 0; i < workoutOutputs[num][6].length; i++) {
+    workoutHowTo += `<li> ${workoutOutputs[num][6][i]} </li></br>`;
+  }
+
   intensityLevelInfo.innerHTML = `<strong>Intensity Level: </strong> ${workoutOutputs[num][3]}`;
   workoutNameInfo.innerHTML = `<strong>Workout Name: </strong> ${workoutOutputs[num][0]}`;
   targetedMusclesInfo.innerHTML = `<strong>Targeted Muscles: </strong> ${workoutOutputs[num][4]}`;
-  workoutLinkInfo.innerHTML = `<strong>How to: </strong> <a href=${workoutOutputs[num][5]} target="_blank">${workoutOutputs[num][5]} </a>`;
+  workoutHowToInfo.innerHTML = `<strong>How To: </strong> <ol id="workout-howto"> ${workoutHowTo} </ol>`;
+  workoutLinkInfo.innerHTML = `<strong>For more info: </strong> <a href=${workoutOutputs[num][5]} target="_blank">${workoutOutputs[num][5]} </a>`;
 };
 
 document.addEventListener("keydown", function (e) {
