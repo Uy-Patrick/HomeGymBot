@@ -779,11 +779,11 @@ const getCosineSimilarityUpper = function (userTargetMuscles, arr) {
       ...workout,
       calcCosineSimilarity(userTargetMuscles, workout[1]),
     ]);
-    // sample output : [workout name, value, workout pic, intensity level", target muscles, how to, value]
+    // sample output : [workout name, value, workout pic, intensity level, target muscles, how to, value]
   }
 
   upperBodyWorkoutValues.sort((a, b) => {
-    return b[6] - a[6];
+    return b[7] - a[7];
   });
   console.log("After sort:", upperBodyWorkoutValues);
   return upperBodyWorkoutValues;
@@ -798,12 +798,12 @@ const getCosineSimilarityLower = function (userTargetMuscles, arr) {
       ...workout,
       calcCosineSimilarity(userTargetMuscles, workout[1]),
     ]);
-    // sample output : [workout name, value, workout pic, intensity level", target muscles, how to, value]
+    // sample output : [workout name, value, workout pic, intensity level, target muscles, how to, value]
     console.log(lowerBodyWorkoutValues);
   }
 
   lowerBodyWorkoutValues.sort((a, b) => {
-    return b[6] - a[6];
+    return b[7] - a[7];
   });
   console.log("After sort:", lowerBodyWorkoutValues);
   return lowerBodyWorkoutValues;
@@ -877,6 +877,7 @@ const getBeginnerWorkouts = function () {
   ) {
     // no lower muscles have been selected
     getUpperWorkouts(beginnerUpperBodyWorkoutsArr);
+    // console.log(getUpperWorkouts(beginnerUpperBodyWorkoutsArr));
   } else if (
     !upperBodyTargetMuscles.includes(1) &&
     lowerBodyTargetMuscles.includes(1)
@@ -956,6 +957,7 @@ const changeWorkoutsDisplayed = function () {
         intensityLevel,
         targetedMuscles,
         workoutLink,
+        howto,
         cosSim,
       ],
     ] of workoutOutputs.entries()) {
@@ -983,6 +985,7 @@ const changeWorkoutsDisplayed = function () {
   ) {
     // no lower muscles have been selected
     workoutOutputs = upperBodyWorkoutOutputs;
+
     for (const [
       index,
       [
@@ -992,6 +995,7 @@ const changeWorkoutsDisplayed = function () {
         intensityLevel,
         targetedMuscles,
         workoutLink,
+        howto,
         cosSim,
       ],
     ] of workoutOutputs.entries()) {
@@ -1027,6 +1031,7 @@ const changeWorkoutsDisplayed = function () {
         intensityLevel,
         targetedMuscles,
         workoutLink,
+        howto,
         cosSim,
       ],
     ] of workoutOutputs.entries()) {
@@ -1092,3 +1097,6 @@ document.addEventListener("keydown", function (e) {
     closeWorkoutInfo();
   }
 });
+
+document.querySelector("#workout1").src =
+  "https://cdn.shopify.com/s/files/1/1633/7705/files/bodyweight_explosive_leg_exercises_480x480.jpg?v=1607258056";
