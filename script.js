@@ -346,7 +346,6 @@ const advancedUpperBodyWorkouts = [
     workoutName: "One Arm Push Up",
     value: [1, 1, 1, 1, 0, 1],
     workoutPic:
-      "https://thumbs.gfycat.com/RemoteSizzlingGilamonster-max-1mb.gif",
       "https://media.giphy.com/media/PmLKIdw5HflJjY0r0y/giphy.gif",
     intensityLevel: "Advanced",
     targetedMuscles: "Shoulders, Chest, Triceps, Biceps, Abdominals",
