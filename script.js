@@ -264,7 +264,7 @@ const intermediateUpperBodyWorkouts = [
     workoutName: "Decline Plank",
     value: [1, 0, 0, 0, 0, 1],
     workoutPic:
-      "https://fitstop24.com/media/feet-elevated-decline-plank_1.jpg.400x330_q95_crop-%2C_filters-detail.jpg",
+      "https://2.bp.blogspot.com/-0GmPJzRld48/UnAEWNAw1NI/AAAAAAAABhQ/EZ9c_aKyezM/s1600/decline+plank.JPG",
     intensityLevel: "Intermediate",
     targetedMuscles: "Shoulders, Abdominals",
     workoutLink: "https://www.youtube.com/watch?v=hCM8qYHen0Y",
@@ -329,7 +329,7 @@ const advancedUpperBodyWorkouts = [
     workoutName: "Single Leg Push Up",
     value: [1, 1, 1, 0, 0, 0],
     workoutPic:
-      "https://thumbs.gfycat.com/DapperSpicyApatosaur-size_restricted.gif",
+      "https://cdn.jefit.com/assets/img/exercises/gifs/1053.gif",
     intensityLevel: "Advanced",
     targetedMuscles: "Shoulders, Chest, Triceps",
     workoutLink:
@@ -347,6 +347,7 @@ const advancedUpperBodyWorkouts = [
     value: [1, 1, 1, 1, 0, 1],
     workoutPic:
       "https://thumbs.gfycat.com/RemoteSizzlingGilamonster-max-1mb.gif",
+      "https://media.giphy.com/media/PmLKIdw5HflJjY0r0y/giphy.gif",
     intensityLevel: "Advanced",
     targetedMuscles: "Shoulders, Chest, Triceps, Biceps, Abdominals",
     workoutLink:
@@ -534,7 +535,7 @@ const intermediateLowerBodyWorkouts = [
     workoutName: "Walking Lunge",
     value: [1, 1, 1, 1],
     workoutPic:
-      "https://i0.wp.com/thumbs.gfycat.com/AltruisticFantasticCub-size_restricted.gif?w=1155&h=840",
+      "https://www.verywellfit.com/thmb/3vtqqwo7EMlLsrgZOsRVKkKm4Gc=/1500x0/filters:no_upscale():max_bytes(150000):strip_icc()/About-2A14-Lunges-928-f5d663f28f2d4fb592e21c46ee864476.gif",
     intensityLevel: "Intermediate",
     targetedMuscles: "Glutes, Quadriceps, Hamstrings, Calves",
     workoutLink:
